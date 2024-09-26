@@ -1,8 +1,15 @@
 # React Thinking
 
 # Context
+
 - 기술적 프레임워크를 써먹기 전에, 사고적 프레임워크를 세팅.
 - 리액트 라이브러리를 본격적으로 적용해보기 앞서, 공식적으로 권장되는 '리액트를 사용하는 맥락', '관점', 'tip' 등을 싱크하기 위함.
+
+<br>
+
+<img src="../src/image/react-thinking-intro.png" width="600" />
+
+- 원문: https://ko.react.dev/learn/thinking-in-react 
 
 <br>
 
