@@ -94,7 +94,7 @@
        변수 = 7;
     }
     
-    // 아니 return을 넣어야죠! => return은 '함수'에서 쓰이지 않으면 쓸모가 없음. 
+    // (반문) 아니, return을 넣어야죠! => return은 '함수'에서 쓰이지 않으면 쓸모가 없음. 
     	// MDN "return은 (1) 함수 끝내거나, (2) 함수 반환값 정하는 2개 역할만 함."
     	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return
     function 함수(숫자1, 숫자2) {
