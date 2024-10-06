@@ -3,6 +3,10 @@
 ## context
 - 원문 [How atomic Git commits dramatically increased my productivity - and will increase yours too](https://dev.to/samuelfaure/how-atomic-git-commits-dramatically-increased-my-productivity-and-will-increase-yours-too-4a84)을 번역한 글 [개발 생산성을 높이는 원자적 커밋 (Atomic Commit)](https://devloun.tistory.com/entry/%EC%9B%90%EC%9E%90%EC%A0%81-%EC%BB%A4%EB%B0%8B#google_vignette)을 참고했다.
 - 번역글에서 인용 부분은 인용 표시로 구분했고, 내 해석과 의견은 🔻이모지와 함께 명시했다.
+- 원문은 도입부에서 '앎 vs 진짜 앎'의 차이를 들면서, 개념은 알지만 실천하지 못하는 것은 엄청난 차이임을 강조한다. 
+  > This long introduction is here to illustrate a point: you can know what you should do, but you might not know how important it is to actually do it. 
+  > - So many people out there, just like I did before, know how TDD is great... yet still don't use it. // TDD 얼마나 좋은지 알면서 쓰지 않는 현실..
+  > - The simplest concepts can often completely change the way you work... if you would only apply them. Introducing: the atomic git commits. // 단순 커밋 습관이 아니라, 업무 방식을 근본적으로 바꾸는 것에 대한 글임을 시사함. (웅장)
 
 ## content
 > 원자적 커밋이란?
