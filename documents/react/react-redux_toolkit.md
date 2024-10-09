@@ -6,17 +6,26 @@
 
 ## content - opinion
 
-![react-redux-realtionship](/src/image/react-redux-realtionship.jpg)
+![react-redux-realtionship](/src/image/react-redux-files-overview.jpg)
 
+### createSlice에서 왜 'slice'라고 이름을 붙였을까?
+https://redux-toolkit.js.org/api/createSlice
+
+### createSlice 와 useState의 코드상 차이 말고 역할적 차이는 뭘까?
+구조적으로 useState 쓰던 당시에는 컴포넌트들이 서로를 바라보고 상태를 서로 넘겨가면서 공유할 수 밖에 없었다. 하지만 redux 같은 모두와 연결된 상태 라운지/탕비실? 같은 공간을 두고 ...
+
+- reducer 함수가 순수 함수여야 하며, 상태를 직접 변경하지 않고 새로운 상태 객체를 반환한다는 것은 무슨 뜻인가?
+- reducer 함수 객체 안의 메소드들의 매개변수로 왜 꼭 state, action이 들어가야 하나?
+- 왜 reducer는 함수라는데 왜 그 안에 key, value 쌍으로 함수들이 객체의 프로퍼티로 있는 구조로 짰을까?
+- store 파일에서 왜 reducer 객체에 counter 프로퍼티가 있는가? 그리고 그 키의 value는 무엇인가?
+- 리덕스에서 상태 업데이트 함수들을 굳이 왜 또 컴포넌트 안으로 옮겨줘야 할까? reducers 함수 안에서 모두 해결할 수 없는 건가?
+- createSlice() 함수의 매개변수로 들어가는 name 프로퍼티의 value가 왜 useSelector 하면 해당 value가 key로 useSelector 돼?
 
 ## content - research
 
 ### 정의
 
 - Redux Toolkit은 Redux에서 공식적으로 추천하는 Redux 로직 작성 방법.
-
-#### Redux, Redux 코어, Redux Toolkit의 차이점
-- WIP
 
 #### => Redux Toolkit: Redux를 더 간편하게 써보자
 - 기본적인 Redux 작업을 간단하게 만드는 API 제공을 위해 만들어짐.
