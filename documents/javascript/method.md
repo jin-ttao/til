@@ -22,7 +22,15 @@
 > - If you need to find if any element satisfies the provided testing function, use some().
 > - If you need to find all elements that satisfy the provided testing function, use filter().
 
+#### sort()
+- sort()도 원본에 영향을 준다. 그 정렬된 원본이 반환되는 것이라, 복사본이 반환되는 것이 아님을 기억하자. 
 
+```js
+// bad
+const arrSorted = arr.sort((a, b) => a - b);
+// good
+const arrSorted = [...arr].sort((a, b) => a - b);
+```
 
 #### `reduce()`
 ---
