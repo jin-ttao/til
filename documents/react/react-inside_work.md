@@ -3,6 +3,9 @@
 
 ## Opinion
 
+### infinite loop Error가 발생했는데, 유용한 정보들이 있는 듯 하다. 리액트 내부 동작 알 수 있는 부분들 체크.
+![react-error-infinite-loop](/src/image/react-error-infinite-loop.png)
+
 
 ## Learned
 
@@ -38,3 +41,4 @@ useEffect 의존성 배열 빈배열이면 초기 마운팅에도 실행?
 리스트 렌더링 링크
 useEffect 클린업 함수 링크
 useContext 링크
+
