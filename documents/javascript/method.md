@@ -22,6 +22,11 @@
 > - If you need to find if any element satisfies the provided testing function, use some().
 > - If you need to find all elements that satisfy the provided testing function, use filter().
 
+#### 배열 요소를 바꾸고 싶다 (메소드가 실제 '변경'으로 동작하는 것 이해하기)
+- `fill()` 메소드도 단순 빈 공간 채우기가 아니라, '변경'의 역할. "그 자리에 뭐가 있든 이걸로 fill 한다"의 의미.
+> 공식문서
+> - Array 인스턴스의 fill() 메서드는 배열의 인덱스 범위 내에 있는 모든 요소를 정적 값으로 변경합니다. 그리고 수정된 배열을 반환합니다.
+
 #### sort()
 - sort()도 원본에 영향을 준다. 그 정렬된 원본이 반환되는 것이라, 복사본이 반환되는 것이 아님을 기억하자. 
 
