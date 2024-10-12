@@ -20,3 +20,8 @@ import { Provider, useSelector, useDispatch } from 'react-redux';
 // redux-toolkit
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 ```
+
+#추가확인
+1. 어떤 의미로 reducer 단어를 쓸까? 역할이 연관있나? reducer라는 단어를 왜 사용하나.
+2. configureStore 함수는 매개변수로 뭐가 들어가고, 무엇을 반환하는지. 그리고 내부 동작의 핵심 단계와 각 단계별 결과물이 궁금하다.
+3. 왜 reducer라는 프로퍼티가 user, userReducer를 품고 있을까. 다른 slice 추가하려면 어떻게 코드를 작성하면 될까?
