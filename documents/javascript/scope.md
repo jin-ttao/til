@@ -41,3 +41,7 @@ console.log(i); // 5 출력.. 그런데 이 i는 어느 i일까?:
 ```
 실험 스크린샷
 ![변수_var_let_scope](/src/image/변수_var_let_scope.png)
+
+참고
+- https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/var
+- https://www.bangseongbeom.com/javascript-var-let.html
