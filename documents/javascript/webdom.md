@@ -9,3 +9,13 @@
 
 사실 성능은 크기 고려하지 않았던 것 같다. ‘성능 차이로 둘 중 뭐 하나 강하게 권장하는 건 없구나’ 생각해서. 다시 생각해보니, 앱이 복잡해지면 성능차도 커질 것 같아서 생각해볼 주제일 것 같다. 구체적인 수치도 조사해보자. #추가확인
 
+#추가확인 그러고 보니 React도 굳이 `getElementById`를 써서 root를 가져온다.
+```js
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
+  </React.StrictMode>
+);
+```
