@@ -72,6 +72,24 @@ return (
 - 찾아보니 React Router에서 `Outlet`과 상태, 값을 공유하려면 대체로 `Outlet` 세계관 안의 `useoutletcontext` 훅을 쓰면 된다고 한다. 이렇게 해서 하위 경로 컴포넌트들 중에서도, 필요한 컴포넌트에서만 접근해서 사용하면 되어서 prop으로 넘길 때 들었던 의문도 해소가 되었다.
 > Often parent routes manage state or other values you want shared with child routes. You can create your own context provider if you like, but this is such a common situation that it's built-into <Outlet />:
 
+```js
+// parent
+function Parent() {
+  const [count, setCount] = React.useState(0);
+  return <Outlet context={[count, setCount]} />; // 선언
+}
+
+// child
+import { useOutletContext } from "react-router-dom";
+
+function Child() {
+  const [count, setCount] = useOutletContext(); // 활용
+  const increment = () => setCount((c) => c + 1);
+  return <button onClick={increment}>{count}</button>;
+}
+
+```
+
 ## Router Hook
 
 ### useNavigate
