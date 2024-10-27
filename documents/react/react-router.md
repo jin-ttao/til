@@ -67,6 +67,11 @@ return (
   - 만약 자식 컴포넌트 부터 렌더링 부모 컴포넌트가 렌더링되거나, 부모 컴포넌트가 먼저 렌더링되었으나 Effect 타이밍이 밀려 데이터 작업이 안끝났다면 자식 컴포넌트에서 의도대로 해당 데이터를 활용하지 못할 것 같다.
   - 타이밍과 관계 없이 부모 컴포넌트에서 언젠가 전역 상태가 업데이트 되면, 해당 상태를 참조하고 있는 자식 컴포넌트가 반드시 리렌더링 될 것이기 때문에 문제가 되지 않는 걸까?
 
+### `<Outlet />`으로 prop 넘겨주려면 Hook을 사용해야 한다. (`useoutletcontext`)
+- 배경: 상위 경로에서 전역 상태를 가져와, 하위 경로에 prop으로 넘겨주었으나 동작하지 않았다. 이렇게 prop으로 넘기기 전 한 가지 의문도 있었는데, 하위 경로 `Outlet`이 2개라 둘 중 어떤 하위경로로 인자를 넘겨주는지 명시하는 것도 필요하지 않을까 생각했다.
+- 찾아보니 React Router에서 `Outlet`과 상태, 값을 공유하려면 대체로 `Outlet` 세계관 안의 `useoutletcontext` 훅을 쓰면 된다고 한다. 이렇게 해서 하위 경로 컴포넌트들 중에서도, 필요한 컴포넌트에서만 접근해서 사용하면 되어서 prop으로 넘길 때 들었던 의문도 해소가 되었다.
+> Often parent routes manage state or other values you want shared with child routes. You can create your own context provider if you like, but this is such a common situation that it's built-into <Outlet />:
+
 ## Router Hook
 
 ### useNavigate
