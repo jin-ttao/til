@@ -18,7 +18,7 @@
 1. JSX는 마크업을 위해 결국 HTML '값'을 반환해야 함. 그 자체로 '값'으로 볼 수 있는 코드(표현식)를 JSX는 그나마 유연하게 허용해줌.
   - 참고: [마크업은 프로그래밍(연산)과 무관하다](https://www.inflearn.com/pages/infmation-61-20230404?srsltid=AfmBOopT8EFOr_fAI1bo2W6wUF8qtRpbVef4QiTOYcfRbnag8Gwey6Pb)
   ![HTML마크업](HTML마크업.png)
-        
+
 2. React는 주문만 받고 요리는 하지 않는 ‘웨이터’. 개발자에게든, 사용자에게든 주문(value, event)을 받기만 하고 직접 지지고 볶고(연산, statement) 하지 않음. 여기서 받은 대로 저기로 전하기만 할 뿐임.
 ![요리(연산 등 작업) 안하고 전달만 하는 리액트](요리(연산 등 작업) 안하고 전달만 하는 리액트.png)
 
