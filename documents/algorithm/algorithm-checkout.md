@@ -1,5 +1,44 @@
 # Algorithm checkout
 
+## Is Object Empty
+
+```js
+const isEmpty = function(obj) {
+    if (Array.isArray(obj)) {
+        return obj.length === 0;
+    }
+    return Object.keys(obj).length === 0;
+};
+```
+#### 자바스크립트도 배열을 객체의 특별한 한 형태로 간주한다. 그래서 `Object.keys()`도 배열, 객체 둘다 적용 가능함.
+
+```js
+// 배열의 인덱스가 키가 됨.
+Object.keys([1, 2, 3]) // ['0', '1', '2']
+Object.keys([]) // []
+
+// 빈 배열, 빈 객체는?
+const key = Object.keys({});
+const value = Object.values({});
+
+console.log(key); // [] ( truthy )
+console.log(value); // [] ( truthy )
+```
+
+#### Boolean 값을 리턴하는 경우, 연산자를 포함한 표현식으로 리턴하는 것도 가능함.
+```js
+const isEmpty = function(obj) {
+    if (Array.isArray(obj)) {
+        return obj.length === 0; // 표현식 return
+    }
+    return Object.keys(obj).length === 0; // 표현식 return
+};
+```
+
+<br>
+
+## something
+
 #### 요구사항으로 주어진 정수를 직접 제어(e.g. 감소)하며 추적하는 방식으로 변경하면 더 안전할 수 있음.
 
 #### 특정 데이터를 배열 타입으로 유지하다가 문자열로 변환하는 과정이 반복됨. 불필요한 연산일 수 있어서, 문자열을 직접 조작하는 방식으로 하면 효율성 개선할 수 있음.
@@ -12,6 +51,8 @@
 #### `Array.from`으로 문자열을 배열로 변환한 점 (아직 문자열에 `Array.from`을 사용해본 적 없는데 좋은 예시로 보임)
 
 #### 문자열 반복 생성을 위해 배열에 문자열을 `fill`로 채우지 않고, `repeat` 메소드로 문자열 반복 생성 가능
+
+<br>
 
 ## Ransom Note
 ```js
