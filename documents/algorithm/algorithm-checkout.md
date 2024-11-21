@@ -1,5 +1,49 @@
 # Algorithm checkout
 
+## 104. Maximum Depth of Binary Tree
+```js
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number}
+ */
+const maxDepth = function(root) {
+    if (root == null)  {
+        return 0;
+    }
+
+    let leftDepth = maxDepth(root.left);
+    let rightDepth = maxDepth(root.right);
+
+    return Math.max(leftDepth, rightDepth) + 1;
+};
+```
+
+### param이 `TreeNode`는 어떤 경우인가. TreeNode가 함수로 선언되었음. 리턴이 없어서 반환값이 없지 않은지 점검.
+
+#### 생성자 함수는 `return`이 없으면 새로 생성된 객체가 반환됨.
+> If the constructor function returns a non-primitive, this return value becomes the result of the whole new expression. Otherwise, **if the constructor function doesn't return anything or returns a primitive, newInstance is returned instead.** (Normally constructors don't return a value, but they can choose to do so to override the normal object creation process.) [MDN - new operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new#description)
+
+실험
+```js
+const node3 = new TreeNode(3); // 여기서 `new` 제거하면 `node3`는 undefined.
+// 출력
+TreeNode {
+  val: 3,
+  left: undefined,
+  right: undefined,
+  __proto__: { constructor: ƒ TreeNode() }
+}
+```
+
+
 ## Is Object Empty
 
 ```js
