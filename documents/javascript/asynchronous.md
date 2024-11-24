@@ -31,7 +31,7 @@ promise1.then(val => console.log(val)); // 3
 ### promise.all()
 > The Promise.all() static method takes an iterable of promises as input and returns a single Promise. <br> This returned promise fulfills when all of the input's promises fulfill (including when an empty iterable is passed), with an array of the fulfillment values. <br> It rejects when any of the input's promises rejects, with this first rejection reason. <br> [공식문서](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all)
 
-#### ppromise.all()도 promise 메서드 중 하나. 단 하나의 promise 객체를 반환하는데, `fullfill`일 수도 `reject`일수도.
+#### promise.all()도 promise 메서드 중 하나. 단 하나의 promise 객체를 반환하는데, `fullfill`일 수도 `reject`일수도.
 - `input`: iterable한 promises, 보통 promise 배열.
 - `return`: a single Promise.
   - `fulfill`: input의 모든 promise들이 fulfill 될때 반환되는 promise가 fullfill 됨.

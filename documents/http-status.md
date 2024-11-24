@@ -3,7 +3,7 @@
 ## context
 - 이번 프로젝트에서 처음으로 API별 HTTP 상태 코드를 정의하게 되었다.
 - 처음에는 단순하게 생각했다. "어떤 API든 에러는 비슷하지 않을까?" 하는 생각에 공통적으로 발생할 수 있는 에러 코드만 제너럴하게 먼저 정리해두었다.
-- 하지만 "각 API마다 HTTP 상태 코드가 정의되어야 할 것"이라는 피드백을 받고 YouTube, GitHub의 API 문서를 찾아보게 되었다. 실제 서비스들의 에러 처리 방식을 보니 유용한 부분이 많았다.
+- 하지만 "각 API마다 HTTP 상태 코드가 정의되어야 할 것"이라는 피드백을 받고 [YouTube API](https://developers.google.com/youtube/v3/docs/errors), GitHub의 API 문서를 찾아보게 되었다. 실제 서비스들의 에러 처리 방식을 보니 유용한 부분이 많았다.
 - 그리고 나만의 HTTP 상태 코드 작성하는 방법론도 고민하게 되었는데, 자세한 내용은 아래 기재했다.
 - 참고
   - [MDN 공식문서: HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)

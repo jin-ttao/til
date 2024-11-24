@@ -28,7 +28,7 @@ const maxDepth = function(root) {
 
 ### param이 `TreeNode`는 어떤 경우인가. TreeNode가 함수로 선언되었음. 리턴이 없어서 반환값이 없지 않은지 점검.
 
-#### 생성자 함수는 `return`이 없으면 새로 생성된 객체가 반환됨.
+#### 생성자 함수는 `return`이 없으면 새로 생성된 객체가 반환됨. 이 케이스는 설명을 추가로 보아서 알았지만, 다른 케이스에서 어떻게 생성자 함수인지 알 수 있을까?
 > If the constructor function returns a non-primitive, this return value becomes the result of the whole new expression. Otherwise, **if the constructor function doesn't return anything or returns a primitive, newInstance is returned instead.** (Normally constructors don't return a value, but they can choose to do so to override the normal object creation process.) [MDN - new operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new#description)
 
 실험
