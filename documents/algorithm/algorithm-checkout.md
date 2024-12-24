@@ -1,5 +1,53 @@
 # Algorithm checkout
 
+## 2619. Array Prototype Last
+
+```js
+ * @param {number[]} nums
+ * @return {number}
+ */
+const majorityElement = function(nums) {
+  const count = {};
+  let maxNum = 0;
+  let maxCount = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+      const key = nums[i].toString();
+
+      if (!count[key]) {
+          count[key] = 1;
+      } else {
+          count[key] += 1;
+      }
+  }
+
+  for (const c in count) {
+      if (maxCount <= count[c]) {
+          maxCount = count[c];
+          maxNum = c;
+      }
+  }
+
+  return Number(maxNum);
+};
+```
+### 고민 - 배열을 순회하면서 각 요소가 포함된 개수를 반드시 세어야 하는가? 모두 순회하지 않고 세는 방법은 없을까? 그나저나 순회하는 것이 늘 좋지 않은 방법이라 볼 수 있는가?
+- 순회 자체가 나쁜 것이 아니라, 불필요한 순회나 중복 순회가 문제일 수 있는 것 같다.
+- 대부분의 알고리즘은 최소 한 번 이상의 순회는 필요했던 것 같기도 하니.
+
+### 접근 - 우선 문제를 푸는 것이 효율적으로 푸는 것 보다 우선임. 의사코드 기록.
+- 빈 객체를 선언하고 배열 nums를 순회하면서 각 요소를 객체의 key로 하고, 요소의 개수를 value로 한다.
+- 그리고 max value를 갖는 key를 반환하면 됨. 객체를 순회하면서 모두 비교하는 방법.
+- 현재 값 보다 큰 값이 나오면 해당 key로 갱신을 반복. 동점이 나와도 무방함.
+
+작동하는 코드 만들고, 개선하는게 답이니.
+
+### 궁극적으로 결과를 도출해야 하는 건 ‘가장 많이 등장하는 요소’를 찾는 것. 개수가 반드시 과반이라는 조건도 나왔는데 힌트일 수 있음.
+
+### 풀고 해설지를 보니 "Boyer-Moore 알고리즘"이라는 것이 있었다. 이게 위 고민들과 연관성이 있었다.
+- 개수를 정확히 세지 않고도 과반수 원소를 찾을 수 있도록 하는 알고리즘인데, "개수가 반드시 과반이라는 조건" 덕분에 가능하다고 한다.
+- 이렇게 기존에 검증된 알고리즘에 대한 지식을 갖는 것도 개발이나 알고리즘 풀 때 도움이 될 것.
+
 <br>
 
 ## 2619. Array Prototype Last
