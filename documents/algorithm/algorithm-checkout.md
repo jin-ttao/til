@@ -1,5 +1,48 @@
 # Algorithm checkout
 
+
+## 217. Contains Duplicate
+
+```js
+ * @param {number[]} nums
+ * @return {boolean}
+ */
+const containsDuplicate = function(nums) {
+    const length = nums.length;
+    const size = new Set(nums).size;
+
+    return length !== size;
+};
+```
+
+### 문제 정의
+- input: 정수를 포함한 배열 nums
+- output: 배열 안에 중복 요소가 1개라도 있으면 true, 아니라면 false (boolean)
+
+### 접근
+- 요소의 개수를 세는 방법도 있겠지만, 최대한 복잡도가 낮은 방법이 뭘까?
+- (결정) JS에서 중복 제거를 위해 자주 사용하는 Set 객체를 활용하고, length와 size를 비교해보자.
+
+### 왜 Set 객체를 사용하는 것이 복잡도가 낮은 방법일까?
+- 정확히 하자면, 순회하는 과정이 빠를 수 있는 것.
+- Set 객체의 특성을 이해하는 데에 'hash table'가 굉장히 중요한 개념.
+- Set 객체는 내부적으로 hash table를 사용하는 자료구조임. 이에 따른 trade-off도 발생.
+    - 때문에 속도가 array 보다 빠름.
+    - hash table를 유지하기 위해 추가적인 정보를 유지해야 할 수 있어서 큰 데이터 집합에서는 array 대비 메모리 사용량 차이가 날 수 있음. (공간 복잡도)
+
+### 그럼 왜 hash table로 구성하면 빠를까? => 해시 함수 덕분.
+- 해시 함수 덕분. hash table도 결국 해시 함수로 변환한 값을 index로 해서 key, value를 저장하는 자료 구조.
+- 특정 index가 있기 때문에 속도에 장점이 있음. (속도에서 index는 뗄 수 없는 관계인 것 같다. 켄님이 DB 쿼리시 index를 중요하게 활용하라 하셨는데 비슷한 맥락이라고 생각된다)
+- "hash meaning" 해시 포테이토가 나옴. 이전 까지는 모호하게 "암호화된 것"이라고 생각했는데, 이건 '해시'라는 기술이 사용된 영역을 보고 내가 해석한 결과였다.
+- 오히려 해시는 해시 포테이토 의미 처럼 "작게 다진다"의 의미에 가깝다. 작게 다지는 것을 연상해야 해시 알고리즘의 동작을 연상하기 쉽겠다.
+
+### 그럼 단순하고 작은 데이터에서는 배열을 사용하는 것이 더 나은 선택일 수 있겠다. 늘 Set, Map 같은 hash table 기반 객체가 정답은 아닐 것.
+- 함께 비교되는 대상으로 map 객체도 있는데, 애플리케이션에 어떤 자료구조를 쓸지 의사결정을 할 수 있어야 한다고 함. 당연히 trade-off가 있을 수 있으니 근거가 분명해야 함.
+
+참고 https://medium.com/@dm_md/unveiling-the-speed-of-javascript-collections-set-vs-map-vs-array-vs-object-3f6e44f24505
+
+<br>
+
 ## 2619. Array Prototype Last
 
 ```js
