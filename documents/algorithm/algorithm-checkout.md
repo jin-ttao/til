@@ -1,5 +1,71 @@
 # Algorithm checkout
 
+## 374. Guess Number Higher or Lower
+
+- 이진탐색에서 ceil 하는게 좋을까 floor 하는게 좋을까? 마지막 시점에서 판가름 될 것. 작은 단위에 가까워질수록 정교하게 처리해야 함.
+- input이 적은 규모일 때 예외처리에서 애먹음.
+
+- 이진탐색이 늘 효율적인 방법은 아닐 것. 숫자가 커질 때 효율적으로 검사하고자 하는 것인데, 적은 숫자일 때는 예외처리가 복잡해지지 않을까?
+- 경계 조건 정의, 포인터를 활용하는 면에서 부족한 점이 있다.
+    - 알고 보니, 이진탐색 구현에 표준이 있었다.
+        - 내 방식처럼 start와 end에 middle를 재할당하는 방식이 아니라 middle + 1 혹은 -1 하는 탐색범위를 확실히 줄이면서, 더 안정적이고 예측이 쉽다.
+        - start = middle 방식이 직관적이긴 했지만, 실제로 테스트하다보니 여러 문제가 있었다. (대표적으로 무한루프)
+        - 속도 측면에서도 이점이 있을 것이라 생각했는데, 이 생각도 사실 검증된 것이 아니며 속도 보다 중요한 것이 '안정성'이라는 점을 다시 생각해보게 되었다.
+    - 참고 https://www.geeksforgeeks.org/binary-search/
+- middle이 `Math.floor()`를 통해서만 업데이트 해주었는데 1개의 정수만 반복되면 무한루프로 빠지는 문제가 있었음.
+    - 해결방법: middle 분기처리를 통해 이전 값과 동일한 값이 할당될 것으로 보인다면 +1 해주는 방식으로 해결.
+- 문제를 풀고 다른 풀이들을 보니 middle 뿐 아니라 start, end 값도 잘 활용했음.
+    - 나는 middle을 할당해주는 방식으로 했는데, 이진탐색이라기 보다 범위를 조금씩 좁히는 방식을 채택함.
+    - 예: start += 1, end -= 1 처럼 조금씩 좁혀가는 방식 => 효율이 여전히 높을까?
+- '증명 보다 중요한 실제 테스트'를 강조하는 글을 보고.
+    > 이제 바이너리 검색에 버그가 없다는 것을 알았죠? 글쎄요, 저희는 그렇게 의심하지만 확실하지는 않습니다. 프로그램이 정확하다는 것을 증명하는 것만으로는 충분하지 않으며 테스트도 해야 합니다. 게다가 프로그램이 올바른지 정말 확신하려면 가능한 모든 입력 값에 대해 테스트해야 하지만 이는 거의 불가능합니다. 동시 프로그램의 경우 상황은 더욱 심각합니다. 모든 내부 상태를 테스트해야 하는데, 이는 현실적으로 불가능합니다. 이진 검색 버그는 병합과 다른 분할 및 정복 알고리즘에도 동일하게 적용됩니다. 이러한 알고리즘 중 하나를 구현하는 코드가 있다면 버그가 터지기 전에 지금 바로 수정하세요. 이 버그에서 얻은 일반적인 교훈은 겸손입니다: 아주 작은 코드 조각도 제대로 작성하기 어렵고, 우리 세상은 크고 복잡한 코드 조각으로 운영된다는 사실입니다. [출처 research.google](https://research.google/blog/extra-extra-read-all-about-it-nearly-all-binary-searches-and-mergesorts-are-broken/)
+
+```js
+/**
+ * Forward declaration of guess API.
+ * @param {number} num   your guess
+ * @return 	     -1 if num is higher than the picked number
+ *			      1 if num is lower than the picked number
+ *               otherwise return 0
+ * var guess = function(num) {}
+ */
+
+/**
+ * @param {number} n
+ * @return {number}
+ */
+const guessNumber = function(n) {
+if (n <= 3) {
+  for (let i = 1; i <= n; i++) {
+    if (guess(i) === 0) {
+      return i;
+    }
+  }
+}
+
+let answer = 0;
+let start = 1;
+let end = n;
+let middle = Math.floor((start + end) / 2);
+
+while (answer === 0) {
+  if (middle === Math.floor((start + end) / 2)) {
+    middle += 1;
+  } else {
+    middle = Math.floor((start + end) / 2);
+  }
+
+  if (guess(middle) === 0) {
+    return answer = middle;
+  } else if (guess(middle) === 1) {
+    start = middle;
+  } else if (guess(middle) === -1) {
+    end = middle;
+  }
+}
+};
+```
+
 ## 283. Move Zeroes
 
 ```js
@@ -8,18 +74,18 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 const moveZeroes = function(nums) {
-    const length = nums.length;
-    let countRemove = 0;
+  const length = nums.length;
+  let countRemove = 0;
 
-    for (let i = 0; i < length; i++) {
-        if (nums[i - countRemove] === 0) {
-            nums.splice(i - countRemove, 1);
-            nums.push(0);
-            countRemove += 1;
-        }
+  for (let i = 0; i < length; i++) {
+    if (nums[i - countRemove] === 0) {
+      nums.splice(i - countRemove, 1);
+      nums.push(0);
+      countRemove += 1;
     }
+  }
 
-    return nums;
+  return nums;
 };
 ```
 
