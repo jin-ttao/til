@@ -3,12 +3,12 @@
 <!-- toc -->
 
 - [context](#context)
-  * [git도 '의도'를 먼저 정의하고 사용해야 한다.](#git%EB%8F%84-%EC%9D%98%EB%8F%84%EB%A5%BC-%EB%A8%BC%EC%A0%80-%EC%A0%95%EC%9D%98%ED%95%98%EA%B3%A0-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%9C%EB%8B%A4)
+  - [git도 '의도'를 먼저 정의하고 사용해야 한다.](#git%EB%8F%84-%EC%9D%98%EB%8F%84%EB%A5%BC-%EB%A8%BC%EC%A0%80-%EC%A0%95%EC%9D%98%ED%95%98%EA%B3%A0-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%9C%EB%8B%A4)
 - [content](#content)
-  * [`git rebase`](#git-rebase)
-    + [맥락: 협업 중 최신 코드 업데이트 후 충돌 해결 중 중복 커밋 발생, `rebase` 중 이전 commit과 동일한 커밋을 남긴 것이 원인.](#%EB%A7%A5%EB%9D%BD-%ED%98%91%EC%97%85-%EC%A4%91-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%9B%84-%EC%B6%A9%EB%8F%8C-%ED%95%B4%EA%B2%B0-%EC%A4%91-%EC%A4%91%EB%B3%B5-%EC%BB%A4%EB%B0%8B-%EB%B0%9C%EC%83%9D-rebase-%EC%A4%91-%EC%9D%B4%EC%A0%84-commit%EA%B3%BC-%EB%8F%99%EC%9D%BC%ED%95%9C-%EC%BB%A4%EB%B0%8B%EC%9D%84-%EB%82%A8%EA%B8%B4-%EA%B2%83%EC%9D%B4-%EC%9B%90%EC%9D%B8)
-    + [왜 `rebase`라고 하는가?](#%EC%99%9C-rebase%EB%9D%BC%EA%B3%A0-%ED%95%98%EB%8A%94%EA%B0%80)
-    + [`rebase`를 하지 않으면? 단순 base 지점을 옮겨서 보기 좋게 하는 것 외.](#rebase%EB%A5%BC-%ED%95%98%EC%A7%80-%EC%95%8A%EC%9C%BC%EB%A9%B4-%EB%8B%A8%EC%88%9C-base-%EC%A7%80%EC%A0%90%EC%9D%84-%EC%98%AE%EA%B2%A8%EC%84%9C-%EB%B3%B4%EA%B8%B0-%EC%A2%8B%EA%B2%8C-%ED%95%98%EB%8A%94-%EA%B2%83-%EC%99%B8)
+  - [`git rebase`](#git-rebase)
+    - [맥락: 협업 중 최신 코드 업데이트 후 충돌 해결 중 중복 커밋 발생, `rebase` 중 이전 commit과 동일한 커밋을 남긴 것이 원인.](#%EB%A7%A5%EB%9D%BD-%ED%98%91%EC%97%85-%EC%A4%91-%EC%B5%9C%EC%8B%A0-%EC%BD%94%EB%93%9C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%9B%84-%EC%B6%A9%EB%8F%8C-%ED%95%B4%EA%B2%B0-%EC%A4%91-%EC%A4%91%EB%B3%B5-%EC%BB%A4%EB%B0%8B-%EB%B0%9C%EC%83%9D-rebase-%EC%A4%91-%EC%9D%B4%EC%A0%84-commit%EA%B3%BC-%EB%8F%99%EC%9D%BC%ED%95%9C-%EC%BB%A4%EB%B0%8B%EC%9D%84-%EB%82%A8%EA%B8%B4-%EA%B2%83%EC%9D%B4-%EC%9B%90%EC%9D%B8)
+    - [왜 `rebase`라고 하는가?](#%EC%99%9C-rebase%EB%9D%BC%EA%B3%A0-%ED%95%98%EB%8A%94%EA%B0%80)
+    - [`rebase`를 하지 않으면? 단순 base 지점을 옮겨서 보기 좋게 하는 것 외.](#rebase%EB%A5%BC-%ED%95%98%EC%A7%80-%EC%95%8A%EC%9C%BC%EB%A9%B4-%EB%8B%A8%EC%88%9C-base-%EC%A7%80%EC%A0%90%EC%9D%84-%EC%98%AE%EA%B2%A8%EC%84%9C-%EB%B3%B4%EA%B8%B0-%EC%A2%8B%EA%B2%8C-%ED%95%98%EB%8A%94-%EA%B2%83-%EC%99%B8)
 
 <!-- tocstop -->
 

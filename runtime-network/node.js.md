@@ -7,6 +7,7 @@
 <!-- tocstop -->
 
 ### 내 로컬 vs code에서 특정 파일에서만 node version을 올릴 수 있어? 다른 파일에서는 node 버전을 유지하고.
+
 .nvmrc 파일 사용 (추천) / 프로젝트별 설정 방법 / VS Code 워크스페이스 설정
 nvm
 

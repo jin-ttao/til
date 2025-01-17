@@ -2,17 +2,18 @@
 
 <!-- toc -->
 
-  * [Context](#context)
-    + [표현식이 값을 반환하는 건 알겠다, JSX에는 왜 값만 있어야 할까?](#%ED%91%9C%ED%98%84%EC%8B%9D%EC%9D%B4-%EA%B0%92%EC%9D%84-%EB%B0%98%ED%99%98%ED%95%98%EB%8A%94-%EA%B1%B4-%EC%95%8C%EA%B2%A0%EB%8B%A4-jsx%EC%97%90%EB%8A%94-%EC%99%9C-%EA%B0%92%EB%A7%8C-%EC%9E%88%EC%96%B4%EC%95%BC-%ED%95%A0%EA%B9%8C)
-  * [Opinion](#opinion)
-  * [Learned](#learned)
-    + [1/ 개념적 관점: React의 역할, 마크업을 위한 JSX.](#1-%EA%B0%9C%EB%85%90%EC%A0%81-%EA%B4%80%EC%A0%90-react%EC%9D%98-%EC%97%AD%ED%95%A0-%EB%A7%88%ED%81%AC%EC%97%85%EC%9D%84-%EC%9C%84%ED%95%9C-jsx)
-    + [2/ 문법적 관점 : `React.createElement`함수 인자로 전달 될 수 있는 것만 가능.](#2-%EB%AC%B8%EB%B2%95%EC%A0%81-%EA%B4%80%EC%A0%90--reactcreateelement%ED%95%A8%EC%88%98-%EC%9D%B8%EC%9E%90%EB%A1%9C-%EC%A0%84%EB%8B%AC-%EB%90%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EA%B2%83%EB%A7%8C-%EA%B0%80%EB%8A%A5)
-- [Details](#details)
-    + [Statement(문) vs Expression(표현식) 차이](#statement%EB%AC%B8-vs-expression%ED%91%9C%ED%98%84%EC%8B%9D-%EC%B0%A8%EC%9D%B4)
-    + [JSX “마크업 하고 싶어! (HTML 반환하고 싶음)”](#jsx-%EB%A7%88%ED%81%AC%EC%97%85-%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%96%B4-html-%EB%B0%98%ED%99%98%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9D%8C)
-    + [(반론) 중간에만 조건문 쓰고, 결과적으로 값만 반환할 수 있으면 안돼요?](#%EB%B0%98%EB%A1%A0-%EC%A4%91%EA%B0%84%EC%97%90%EB%A7%8C-%EC%A1%B0%EA%B1%B4%EB%AC%B8-%EC%93%B0%EA%B3%A0-%EA%B2%B0%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EA%B0%92%EB%A7%8C-%EB%B0%98%ED%99%98%ED%95%A0-%EC%88%98-%EC%9E%88%EC%9C%BC%EB%A9%B4-%EC%95%88%EB%8F%BC%EC%9A%94)
-    + [JSX 안에서 statement를 못 쓴다고 React에서 조건문, 반복문 등을 활용하지 못하는 거 아님.](#jsx-%EC%95%88%EC%97%90%EC%84%9C-statement%EB%A5%BC-%EB%AA%BB-%EC%93%B4%EB%8B%A4%EA%B3%A0-react%EC%97%90%EC%84%9C-%EC%A1%B0%EA%B1%B4%EB%AC%B8-%EB%B0%98%EB%B3%B5%EB%AC%B8-%EB%93%B1%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%98%EB%8A%94-%EA%B1%B0-%EC%95%84%EB%8B%98)
+- [Context](#context)
+  - [표현식이 값을 반환하는 건 알겠다, JSX에는 왜 값만 있어야 할까?](#%ED%91%9C%ED%98%84%EC%8B%9D%EC%9D%B4-%EA%B0%92%EC%9D%84-%EB%B0%98%ED%99%98%ED%95%98%EB%8A%94-%EA%B1%B4-%EC%95%8C%EA%B2%A0%EB%8B%A4-jsx%EC%97%90%EB%8A%94-%EC%99%9C-%EA%B0%92%EB%A7%8C-%EC%9E%88%EC%96%B4%EC%95%BC-%ED%95%A0%EA%B9%8C)
+- [Opinion](#opinion)
+- [Learned](#learned)
+  - [1/ 개념적 관점: React의 역할, 마크업을 위한 JSX.](#1-%EA%B0%9C%EB%85%90%EC%A0%81-%EA%B4%80%EC%A0%90-react%EC%9D%98-%EC%97%AD%ED%95%A0-%EB%A7%88%ED%81%AC%EC%97%85%EC%9D%84-%EC%9C%84%ED%95%9C-jsx)
+  - [2/ 문법적 관점 : `React.createElement`함수 인자로 전달 될 수 있는 것만 가능.](#2-%EB%AC%B8%EB%B2%95%EC%A0%81-%EA%B4%80%EC%A0%90--reactcreateelement%ED%95%A8%EC%88%98-%EC%9D%B8%EC%9E%90%EB%A1%9C-%EC%A0%84%EB%8B%AC-%EB%90%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EA%B2%83%EB%A7%8C-%EA%B0%80%EB%8A%A5)
+
+* [Details](#details)
+  - [Statement(문) vs Expression(표현식) 차이](#statement%EB%AC%B8-vs-expression%ED%91%9C%ED%98%84%EC%8B%9D-%EC%B0%A8%EC%9D%B4)
+  - [JSX “마크업 하고 싶어! (HTML 반환하고 싶음)”](#jsx-%EB%A7%88%ED%81%AC%EC%97%85-%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%96%B4-html-%EB%B0%98%ED%99%98%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9D%8C)
+  - [(반론) 중간에만 조건문 쓰고, 결과적으로 값만 반환할 수 있으면 안돼요?](#%EB%B0%98%EB%A1%A0-%EC%A4%91%EA%B0%84%EC%97%90%EB%A7%8C-%EC%A1%B0%EA%B1%B4%EB%AC%B8-%EC%93%B0%EA%B3%A0-%EA%B2%B0%EA%B3%BC%EC%A0%81%EC%9C%BC%EB%A1%9C-%EA%B0%92%EB%A7%8C-%EB%B0%98%ED%99%98%ED%95%A0-%EC%88%98-%EC%9E%88%EC%9C%BC%EB%A9%B4-%EC%95%88%EB%8F%BC%EC%9A%94)
+  - [JSX 안에서 statement를 못 쓴다고 React에서 조건문, 반복문 등을 활용하지 못하는 거 아님.](#jsx-%EC%95%88%EC%97%90%EC%84%9C-statement%EB%A5%BC-%EB%AA%BB-%EC%93%B4%EB%8B%A4%EA%B3%A0-react%EC%97%90%EC%84%9C-%EC%A1%B0%EA%B1%B4%EB%AC%B8-%EB%B0%98%EB%B3%B5%EB%AC%B8-%EB%93%B1%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%98%EC%A7%80-%EB%AA%BB%ED%95%98%EB%8A%94-%EA%B1%B0-%EC%95%84%EB%8B%98)
 
 <!-- tocstop -->
 
@@ -36,7 +37,7 @@
   <img width="300" alt="HTML마크업" src="/assets/HTML마크업.png" >
 
 2. React는 주문만 받고 요리는 하지 않는 ‘웨이터’. 개발자에게든, 사용자에게든 주문(value, event)을 받기만 하고 직접 지지고 볶고(연산, statement) 하지 않음. 여기서 받은 대로 저기로 전하기만 할 뿐임.
-  <img width="300" alt="요리(연산 등 작업) 안하고 전달만 하는 리액트" src="/assets/요리(연산 등 작업) 안하고 전달만 하는 리액트" >
+   <img width="300" alt="요리(연산 등 작업) 안하고 전달만 하는 리액트" src="/assets/요리(연산 등 작업) 안하고 전달만 하는 리액트" >
 
 ### 2/ 문법적 관점 : `React.createElement`함수 인자로 전달 될 수 있는 것만 가능.
 
@@ -94,8 +95,10 @@
 ### (반론) 중간에만 조건문 쓰고, 결과적으로 값만 반환할 수 있으면 안돼요?
 
 - 예시: if 조건문 vs 삼항 연산자 차이
+
   - statement(문)을 쓰면? (if 조건문, for 반복문 등)
     ⇒ 코드 샌드박스 바로가기 https://codesandbox.io/p/sandbox/qdd487
+
   ```jsx
   // 반환 값이 없음
   if (value) {
@@ -114,6 +117,7 @@
     return 0;
   }
   ```
+
   ```jsx
   // 반환 값이 있음. 이 자체가 '값'임.
   변수 = value === true ? 10 : 7;
@@ -123,6 +127,7 @@
 
 - 가령 조건부 렌더링을 구현할 때 삼항연산자, map() 메소드로 충분하지 않을 수 있음.
 - 이때는 jsx 바깥에서 js 문법으로 연산 하고 결과(값)를 jsx에 가져와서 쓰면 됨.
+
   ```jsx
   let 버튼;
   if (value) {
@@ -138,6 +143,7 @@
     </nav>
   );
   ```
+
 - 혹은 정말 JSX 안에서 IF 문 꼭 써야겠다? ⇒ 즉시 실행 함수로.
   - https://javascript.plainenglish.io/iifes-can-change-the-way-you-write-the-useeffect-hook-in-react-a5cb5d69d14a
   - https://velog.io/@rmaomina/IIFE-in-react

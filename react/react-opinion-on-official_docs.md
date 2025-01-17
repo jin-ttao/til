@@ -4,9 +4,9 @@
 
 - [context](#context)
 - [UI 표현하기](#ui-%ED%91%9C%ED%98%84%ED%95%98%EA%B8%B0)
-  * [컴포넌트를 순수하게 유지하기 (컴포넌트를 순수하게 유지하여 혼란스러운 버그를 피하는 방법)](#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EC%88%9C%EC%88%98%ED%95%98%EA%B2%8C-%EC%9C%A0%EC%A7%80%ED%95%98%EA%B8%B0-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EC%88%9C%EC%88%98%ED%95%98%EA%B2%8C-%EC%9C%A0%EC%A7%80%ED%95%98%EC%97%AC-%ED%98%BC%EB%9E%80%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EB%B2%84%EA%B7%B8%EB%A5%BC-%ED%94%BC%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
+  - [컴포넌트를 순수하게 유지하기 (컴포넌트를 순수하게 유지하여 혼란스러운 버그를 피하는 방법)](#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EC%88%9C%EC%88%98%ED%95%98%EA%B2%8C-%EC%9C%A0%EC%A7%80%ED%95%98%EA%B8%B0-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EC%88%9C%EC%88%98%ED%95%98%EA%B2%8C-%EC%9C%A0%EC%A7%80%ED%95%98%EC%97%AC-%ED%98%BC%EB%9E%80%EC%8A%A4%EB%9F%AC%EC%9A%B4-%EB%B2%84%EA%B7%B8%EB%A5%BC-%ED%94%BC%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95)
 - [탈출구 Escape Hatches](#%ED%83%88%EC%B6%9C%EA%B5%AC-escape-hatches)
-  * [useRef](#useref)
+  - [useRef](#useref)
 
 <!-- tocstop -->
 

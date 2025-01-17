@@ -2,13 +2,14 @@
 
 <!-- toc -->
 
-  * [HTTP](#http)
-  * [Client 클라이언트](#client-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8)
-    + [모바일도 프로그래밍적으로 보면 컴퓨터라고 보면 될까?](#%EB%AA%A8%EB%B0%94%EC%9D%BC%EB%8F%84-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%A0%81%EC%9C%BC%EB%A1%9C-%EB%B3%B4%EB%A9%B4-%EC%BB%B4%ED%93%A8%ED%84%B0%EB%9D%BC%EA%B3%A0-%EB%B3%B4%EB%A9%B4-%EB%90%A0%EA%B9%8C)
-- [API](#api)
-  * [💡 API 단어의 'Interface', 드디어 조금 이해가 된다.](#%F0%9F%92%A1-api-%EB%8B%A8%EC%96%B4%EC%9D%98-interface-%EB%93%9C%EB%94%94%EC%96%B4-%EC%A1%B0%EA%B8%88-%EC%9D%B4%ED%95%B4%EA%B0%80-%EB%90%9C%EB%8B%A4)
-- [Postman](#postman)
-  * [이름이 왜 Postman? : 이 자체가 클라이언트 역할해줌.](#%EC%9D%B4%EB%A6%84%EC%9D%B4-%EC%99%9C-postman--%EC%9D%B4-%EC%9E%90%EC%B2%B4%EA%B0%80-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%97%AD%ED%95%A0%ED%95%B4%EC%A4%8C)
+- [HTTP](#http)
+- [Client 클라이언트](#client-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8)
+  - [모바일도 프로그래밍적으로 보면 컴퓨터라고 보면 될까?](#%EB%AA%A8%EB%B0%94%EC%9D%BC%EB%8F%84-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%A0%81%EC%9C%BC%EB%A1%9C-%EB%B3%B4%EB%A9%B4-%EC%BB%B4%ED%93%A8%ED%84%B0%EB%9D%BC%EA%B3%A0-%EB%B3%B4%EB%A9%B4-%EB%90%A0%EA%B9%8C)
+
+* [API](#api)
+  - [💡 API 단어의 'Interface', 드디어 조금 이해가 된다.](#%F0%9F%92%A1-api-%EB%8B%A8%EC%96%B4%EC%9D%98-interface-%EB%93%9C%EB%94%94%EC%96%B4-%EC%A1%B0%EA%B8%88-%EC%9D%B4%ED%95%B4%EA%B0%80-%EB%90%9C%EB%8B%A4)
+* [Postman](#postman)
+  - [이름이 왜 Postman? : 이 자체가 클라이언트 역할해줌.](#%EC%9D%B4%EB%A6%84%EC%9D%B4-%EC%99%9C-postman--%EC%9D%B4-%EC%9E%90%EC%B2%B4%EA%B0%80-%ED%81%B4%EB%9D%BC%EC%9D%B4%EC%96%B8%ED%8A%B8-%EC%97%AD%ED%95%A0%ED%95%B4%EC%A4%8C)
 
 <!-- tocstop -->
 

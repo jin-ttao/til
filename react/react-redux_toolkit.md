@@ -2,21 +2,22 @@
 
 <!-- toc -->
 
-  * [context](#context)
-  * [content - opinion](#content---opinion)
-    + [createSlice에서 왜 'slice'라고 이름을 붙였을까?](#createslice%EC%97%90%EC%84%9C-%EC%99%9C-slice%EB%9D%BC%EA%B3%A0-%EC%9D%B4%EB%A6%84%EC%9D%84-%EB%B6%99%EC%98%80%EC%9D%84%EA%B9%8C)
-    + [createSlice 와 useState의 코드상 차이 말고 역할적 차이는 뭘까?](#createslice-%EC%99%80-usestate%EC%9D%98-%EC%BD%94%EB%93%9C%EC%83%81-%EC%B0%A8%EC%9D%B4-%EB%A7%90%EA%B3%A0-%EC%97%AD%ED%95%A0%EC%A0%81-%EC%B0%A8%EC%9D%B4%EB%8A%94-%EB%AD%98%EA%B9%8C)
-  * [content - research](#content---research)
-    + [정의](#%EC%A0%95%EC%9D%98)
-      - [=> Redux Toolkit: Redux를 더 간편하게 써보자](#-redux-toolkit-redux%EB%A5%BC-%EB%8D%94-%EA%B0%84%ED%8E%B8%ED%95%98%EA%B2%8C-%EC%8D%A8%EB%B3%B4%EC%9E%90)
-    + [Redux Toolkit 체크리스트](#redux-toolkit-%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8)
-    + [1. 설치: Install Redux Toolkit and React-Redux](#1-%EC%84%A4%EC%B9%98-install-redux-toolkit-and-react-redux)
-    + [2. 공용 창고 생성: Create a Redux Store (위치: 별도의 store.js 파일 만들어서)](#2-%EA%B3%B5%EC%9A%A9-%EC%B0%BD%EA%B3%A0-%EC%83%9D%EC%84%B1-create-a-redux-store-%EC%9C%84%EC%B9%98-%EB%B3%84%EB%8F%84%EC%9D%98-storejs-%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EC%84%9C)
-    + [3. 공용 창고 연결: Provide the Redux Store to React (위치: 메인 js파일인 index.js 파일에서)](#3-%EA%B3%B5%EC%9A%A9-%EC%B0%BD%EA%B3%A0-%EC%97%B0%EA%B2%B0-provide-the-redux-store-to-react-%EC%9C%84%EC%B9%98-%EB%A9%94%EC%9D%B8-js%ED%8C%8C%EC%9D%BC%EC%9D%B8-indexjs-%ED%8C%8C%EC%9D%BC%EC%97%90%EC%84%9C)
-    + [4. Create a Redux State Slice (위치: 해당 상태가 필요한 특정 컴포넌트 파일)](#4-create-a-redux-state-slice-%EC%9C%84%EC%B9%98-%ED%95%B4%EB%8B%B9-%EC%83%81%ED%83%9C%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C-%ED%8A%B9%EC%A0%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%ED%8C%8C%EC%9D%BC)
-    + [5. Add Slice Reducers to the Store (위치: #2에서 만들어둔 store.js 파일)](#5-add-slice-reducers-to-the-store-%EC%9C%84%EC%B9%98-%232%EC%97%90%EC%84%9C-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%91%94-storejs-%ED%8C%8C%EC%9D%BC)
-    + [6. Use Redux State & Action in React Components (위치: 해당 상태가 필요한 특정 컴포넌트 파일)](#6-use-redux-state--action-in-react-components-%EC%9C%84%EC%B9%98-%ED%95%B4%EB%8B%B9-%EC%83%81%ED%83%9C%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C-%ED%8A%B9%EC%A0%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%ED%8C%8C%EC%9D%BC)
-- [draft](#draft)
+- [context](#context)
+- [content - opinion](#content---opinion)
+  - [createSlice에서 왜 'slice'라고 이름을 붙였을까?](#createslice%EC%97%90%EC%84%9C-%EC%99%9C-slice%EB%9D%BC%EA%B3%A0-%EC%9D%B4%EB%A6%84%EC%9D%84-%EB%B6%99%EC%98%80%EC%9D%84%EA%B9%8C)
+  - [createSlice 와 useState의 코드상 차이 말고 역할적 차이는 뭘까?](#createslice-%EC%99%80-usestate%EC%9D%98-%EC%BD%94%EB%93%9C%EC%83%81-%EC%B0%A8%EC%9D%B4-%EB%A7%90%EA%B3%A0-%EC%97%AD%ED%95%A0%EC%A0%81-%EC%B0%A8%EC%9D%B4%EB%8A%94-%EB%AD%98%EA%B9%8C)
+- [content - research](#content---research)
+  - [정의](#%EC%A0%95%EC%9D%98)
+    - [=> Redux Toolkit: Redux를 더 간편하게 써보자](#-redux-toolkit-redux%EB%A5%BC-%EB%8D%94-%EA%B0%84%ED%8E%B8%ED%95%98%EA%B2%8C-%EC%8D%A8%EB%B3%B4%EC%9E%90)
+  - [Redux Toolkit 체크리스트](#redux-toolkit-%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8)
+  - [1. 설치: Install Redux Toolkit and React-Redux](#1-%EC%84%A4%EC%B9%98-install-redux-toolkit-and-react-redux)
+  - [2. 공용 창고 생성: Create a Redux Store (위치: 별도의 store.js 파일 만들어서)](#2-%EA%B3%B5%EC%9A%A9-%EC%B0%BD%EA%B3%A0-%EC%83%9D%EC%84%B1-create-a-redux-store-%EC%9C%84%EC%B9%98-%EB%B3%84%EB%8F%84%EC%9D%98-storejs-%ED%8C%8C%EC%9D%BC-%EB%A7%8C%EB%93%A4%EC%96%B4%EC%84%9C)
+  - [3. 공용 창고 연결: Provide the Redux Store to React (위치: 메인 js파일인 index.js 파일에서)](#3-%EA%B3%B5%EC%9A%A9-%EC%B0%BD%EA%B3%A0-%EC%97%B0%EA%B2%B0-provide-the-redux-store-to-react-%EC%9C%84%EC%B9%98-%EB%A9%94%EC%9D%B8-js%ED%8C%8C%EC%9D%BC%EC%9D%B8-indexjs-%ED%8C%8C%EC%9D%BC%EC%97%90%EC%84%9C)
+  - [4. Create a Redux State Slice (위치: 해당 상태가 필요한 특정 컴포넌트 파일)](#4-create-a-redux-state-slice-%EC%9C%84%EC%B9%98-%ED%95%B4%EB%8B%B9-%EC%83%81%ED%83%9C%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C-%ED%8A%B9%EC%A0%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%ED%8C%8C%EC%9D%BC)
+  - [5. Add Slice Reducers to the Store (위치: #2에서 만들어둔 store.js 파일)](#5-add-slice-reducers-to-the-store-%EC%9C%84%EC%B9%98-%232%EC%97%90%EC%84%9C-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%91%94-storejs-%ED%8C%8C%EC%9D%BC)
+  - [6. Use Redux State & Action in React Components (위치: 해당 상태가 필요한 특정 컴포넌트 파일)](#6-use-redux-state--action-in-react-components-%EC%9C%84%EC%B9%98-%ED%95%B4%EB%8B%B9-%EC%83%81%ED%83%9C%EA%B0%80-%ED%95%84%EC%9A%94%ED%95%9C-%ED%8A%B9%EC%A0%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%ED%8C%8C%EC%9D%BC)
+
+* [draft](#draft)
 
 <!-- tocstop -->
 

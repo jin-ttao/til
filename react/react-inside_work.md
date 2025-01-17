@@ -3,8 +3,8 @@
 <!-- toc -->
 
 - [Opinion](#opinion)
-  * [infinite loop Error가 발생했는데, 유용한 정보들이 있는 듯 하다. 리액트 내부 동작 알 수 있는 부분들 체크.](#infinite-loop-error%EA%B0%80-%EB%B0%9C%EC%83%9D%ED%96%88%EB%8A%94%EB%8D%B0-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EC%A0%95%EB%B3%B4%EB%93%A4%EC%9D%B4-%EC%9E%88%EB%8A%94-%EB%93%AF-%ED%95%98%EB%8B%A4-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%82%B4%EB%B6%80-%EB%8F%99%EC%9E%91-%EC%95%8C-%EC%88%98-%EC%9E%88%EB%8A%94-%EB%B6%80%EB%B6%84%EB%93%A4-%EC%B2%B4%ED%81%AC)
-  * [React Strict Mode는 정확히 왜 존재하나?](#react-strict-mode%EB%8A%94-%EC%A0%95%ED%99%95%ED%9E%88-%EC%99%9C-%EC%A1%B4%EC%9E%AC%ED%95%98%EB%82%98)
+  - [infinite loop Error가 발생했는데, 유용한 정보들이 있는 듯 하다. 리액트 내부 동작 알 수 있는 부분들 체크.](#infinite-loop-error%EA%B0%80-%EB%B0%9C%EC%83%9D%ED%96%88%EB%8A%94%EB%8D%B0-%EC%9C%A0%EC%9A%A9%ED%95%9C-%EC%A0%95%EB%B3%B4%EB%93%A4%EC%9D%B4-%EC%9E%88%EB%8A%94-%EB%93%AF-%ED%95%98%EB%8B%A4-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%82%B4%EB%B6%80-%EB%8F%99%EC%9E%91-%EC%95%8C-%EC%88%98-%EC%9E%88%EB%8A%94-%EB%B6%80%EB%B6%84%EB%93%A4-%EC%B2%B4%ED%81%AC)
+  - [React Strict Mode는 정확히 왜 존재하나?](#react-strict-mode%EB%8A%94-%EC%A0%95%ED%99%95%ED%9E%88-%EC%99%9C-%EC%A1%B4%EC%9E%AC%ED%95%98%EB%82%98)
 - [Learned](#learned)
 
 <!-- tocstop -->

@@ -4,7 +4,8 @@
   "description": "> 이론에 생각 덧붙이기",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "npx prettier . --write"
   },
   "repository": {
     "type": "git",

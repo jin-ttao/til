@@ -3,7 +3,7 @@
 <!-- toc -->
 
 - [context](#context)
-  * [질문과 답변 매핑](#%EC%A7%88%EB%AC%B8%EA%B3%BC-%EB%8B%B5%EB%B3%80-%EB%A7%A4%ED%95%91)
+  - [질문과 답변 매핑](#%EC%A7%88%EB%AC%B8%EA%B3%BC-%EB%8B%B5%EB%B3%80-%EB%A7%A4%ED%95%91)
 
 <!-- tocstop -->
 
