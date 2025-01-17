@@ -1,5 +1,18 @@
 # welcome-toast 회고
 
+<!-- toc -->
+
+- [12.09](#1209)
+    + [keep) 좋은 수면 패턴 발견, 당분간 더 시도해볼 것. 👍](#keep-%EC%A2%8B%EC%9D%80-%EC%88%98%EB%A9%B4-%ED%8C%A8%ED%84%B4-%EB%B0%9C%EA%B2%AC-%EB%8B%B9%EB%B6%84%EA%B0%84-%EB%8D%94-%EC%8B%9C%EB%8F%84%ED%95%B4%EB%B3%BC-%EA%B2%83-%F0%9F%91%8D)
+    + [keep) 아침 첫 업무로 알고리즘 문제 풀기를 성공했음 👍](#keep-%EC%95%84%EC%B9%A8-%EC%B2%AB-%EC%97%85%EB%AC%B4%EB%A1%9C-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C-%ED%92%80%EA%B8%B0%EB%A5%BC-%EC%84%B1%EA%B3%B5%ED%96%88%EC%9D%8C-%F0%9F%91%8D)
+    + [keep) 작업현황 정리, 회고 작성을 한 템포 빨리 가져가는 것 👍](#keep-%EC%9E%91%EC%97%85%ED%98%84%ED%99%A9-%EC%A0%95%EB%A6%AC-%ED%9A%8C%EA%B3%A0-%EC%9E%91%EC%84%B1%EC%9D%84-%ED%95%9C-%ED%85%9C%ED%8F%AC-%EB%B9%A8%EB%A6%AC-%EA%B0%80%EC%A0%B8%EA%B0%80%EB%8A%94-%EA%B2%83-%F0%9F%91%8D)
+    + [problem) 공식 문서를 제대로 보자🔥=> 새로운 기술스택 사용 중 이전에 써본 기술 경험에 의존해서 추측하지 말기](#problem-%EA%B3%B5%EC%8B%9D-%EB%AC%B8%EC%84%9C%EB%A5%BC-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EB%B3%B4%EC%9E%90%F0%9F%94%A5-%EC%83%88%EB%A1%9C%EC%9A%B4-%EA%B8%B0%EC%88%A0%EC%8A%A4%ED%83%9D-%EC%82%AC%EC%9A%A9-%EC%A4%91-%EC%9D%B4%EC%A0%84%EC%97%90-%EC%8D%A8%EB%B3%B8-%EA%B8%B0%EC%88%A0-%EA%B2%BD%ED%97%98%EC%97%90-%EC%9D%98%EC%A1%B4%ED%95%B4%EC%84%9C-%EC%B6%94%EC%B8%A1%ED%95%98%EC%A7%80-%EB%A7%90%EA%B8%B0)
+- [11.30](#1130)
+- [11.29](#1129)
+- [11.28](#1128)
+
+<!-- tocstop -->
+
 ## 12.09
 
 #### keep) 좋은 수면 패턴 발견, 당분간 더 시도해볼 것. 👍

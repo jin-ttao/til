@@ -1,4 +1,13 @@
-리덕스는 단방향 구조로 어떻게 이걸 가능하게 하지? 흐름을 한번 내 언어로 정리해보자.
+# Redux
+
+<!-- toc -->
+
+- [리덕스는 단방향 구조로 어떻게 이걸 가능하게 하지? 흐름을 한번 내 언어로 정리해보자.](#%EB%A6%AC%EB%8D%95%EC%8A%A4%EB%8A%94-%EB%8B%A8%EB%B0%A9%ED%96%A5-%EA%B5%AC%EC%A1%B0%EB%A1%9C-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%9D%B4%EA%B1%B8-%EA%B0%80%EB%8A%A5%ED%95%98%EA%B2%8C-%ED%95%98%EC%A7%80-%ED%9D%90%EB%A6%84%EC%9D%84-%ED%95%9C%EB%B2%88-%EB%82%B4-%EC%96%B8%EC%96%B4%EB%A1%9C-%EC%A0%95%EB%A6%AC%ED%95%B4%EB%B3%B4%EC%9E%90)
+  * [Redux, Redux 코어, Redux Toolkit의 차이점](#redux-redux-%EC%BD%94%EC%96%B4-redux-toolkit%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)
+
+<!-- tocstop -->
+
+### 리덕스는 단방향 구조로 어떻게 이걸 가능하게 하지? 흐름을 한번 내 언어로 정리해보자.
 
 Redux 구조에서 상태 변경하기
 

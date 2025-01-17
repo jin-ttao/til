@@ -1,5 +1,11 @@
 # Web & DOM
 
+<!-- toc -->
+
+- [`querySelector`, `getElementById`는 무엇이 다를까? 각각 언제 사용하면 좋을까?](#queryselector-getelementbyid%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B4-%EB%8B%A4%EB%A5%BC%EA%B9%8C-%EA%B0%81%EA%B0%81-%EC%96%B8%EC%A0%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C)
+
+<!-- tocstop -->
+
 ## `querySelector`, `getElementById`는 무엇이 다를까? 각각 언제 사용하면 좋을까?
 
 요전까진 ‘`querySelector`를 쓰자’고 개인적으로 기준을 잡았었다. 통일성이 가장 큰 이유 였는데, 다른 이유도 다시 찾아보고 보완해봐야겠다. 둘 중 확실히 뭐가 나중에, 왜 생겼을지도 궁금하다. 우선 그 전 이유들을 떠올려보면,

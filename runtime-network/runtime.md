@@ -1,5 +1,11 @@
 # JavaScript Runtime
 
+<!-- toc -->
+
+- [자바스크립트 런타임이 새롭게 계속 나오는 이유는 무엇인가? (결론 없이 생각 메모)](#%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%9F%B0%ED%83%80%EC%9E%84%EC%9D%B4-%EC%83%88%EB%A1%AD%EA%B2%8C-%EA%B3%84%EC%86%8D-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B2%B0%EB%A1%A0-%EC%97%86%EC%9D%B4-%EC%83%9D%EA%B0%81-%EB%A9%94%EB%AA%A8)
+
+<!-- tocstop -->
+
 ### 자바스크립트 런타임이 새롭게 계속 나오는 이유는 무엇인가? (결론 없이 생각 메모)
 
 - 링크드인에서 `shadcn/ui` 글을 접하고 더 구글링 하다가 Bun을 만났다. 작년 2023년 한해 동안 `shadcn/ui`이 Bun, Excalidraw 보다 GitHub Star를 많이 받았다는 맥락. `shadcn/ui` 뿐 아니라 Bun도 처음 보는 개념이라 검색해보니, 최신 자바스크립트 런타임 환경이라는 것을 알게 되었다.

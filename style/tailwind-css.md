@@ -1,5 +1,11 @@
 # Tailwind CSS
 
+<!-- toc -->
+
+- [테일윈드 기본 스타일 세트 'Preflight'가 있기 때문에 reset.css를 추가할 필요 없다. (Base Styles)](#%ED%85%8C%EC%9D%BC%EC%9C%88%EB%93%9C-%EA%B8%B0%EB%B3%B8-%EC%8A%A4%ED%83%80%EC%9D%BC-%EC%84%B8%ED%8A%B8-preflight%EA%B0%80-%EC%9E%88%EA%B8%B0-%EB%95%8C%EB%AC%B8%EC%97%90-resetcss%EB%A5%BC-%EC%B6%94%EA%B0%80%ED%95%A0-%ED%95%84%EC%9A%94-%EC%97%86%EB%8B%A4-base-styles)
+
+<!-- tocstop -->
+
 ### 테일윈드 기본 스타일 세트 'Preflight'가 있기 때문에 reset.css를 추가할 필요 없다. (Base Styles)
 
 - 처음에 자바스크립트 때의 생각으로 Tailwind 사용할 대에도 `reset.css` 코드를 CSS 코드에 추가해주었다.

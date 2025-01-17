@@ -1,3 +1,11 @@
+# Scope
+
+<!-- toc -->
+
+- [`var`와 `let`, `const` 각각으로 선언된 변수의 스코프: 선언 키워드, 위치에 따라 어디서 쓸 수 있을까?](#var%EC%99%80-let-const-%EA%B0%81%EA%B0%81%EC%9C%BC%EB%A1%9C-%EC%84%A0%EC%96%B8%EB%90%9C-%EB%B3%80%EC%88%98%EC%9D%98-%EC%8A%A4%EC%BD%94%ED%94%84-%EC%84%A0%EC%96%B8-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%9C%84%EC%B9%98%EC%97%90-%EB%94%B0%EB%9D%BC-%EC%96%B4%EB%94%94%EC%84%9C-%EC%93%B8-%EC%88%98-%EC%9E%88%EC%9D%84%EA%B9%8C)
+
+<!-- tocstop -->
+
 ### `var`와 `let`, `const` 각각으로 선언된 변수의 스코프: 선언 키워드, 위치에 따라 어디서 쓸 수 있을까?
 
 ```js

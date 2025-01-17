@@ -1,3 +1,11 @@
+# Shallow & Deep
+
+<!-- toc -->
+
+- [맥락](#%EB%A7%A5%EB%9D%BD)
+
+<!-- tocstop -->
+
 # 맥락
 
 - 팀플에서 객체간 비교하는데 알고보니 의도가 있었음. https://github.com/Team-Bloblow/Bloblow-Client/pull/68#discussion_r1899049987
