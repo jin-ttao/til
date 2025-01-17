@@ -1,0 +1,23 @@
+{
+  "name": "til",
+  "version": "1.0.0",
+  "description": "> 이론에 생각 덧붙이기",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "til"
+  },
+  "author": "jintae song",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "prettier": "3.4.2"
+  }
+}
