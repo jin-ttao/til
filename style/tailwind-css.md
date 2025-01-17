@@ -9,11 +9,13 @@
 - Tailwind 기본 'Preflight 세팅' 개념에 대해 알게 되었는데, 이 개념이 `reset.css` 코드 의도를 충분히 대체해주기 때문이다. 'modern-normalize' 기반을 사용해서 모든 기본 마진을 제거해주고, 스타일링도 초기화 해주어서 브라우저 간 일관성을 제공하도록 한다. 그래서 `reset.css`, `normalize.css`를 해줄 필요가 없다.
 
 - 참고 https://tailwindcss.com/docs/preflight
+
   > Preflight <br> - An opinionated set of base styles for Tailwind projects.
 
   > Overview <br> - Built on top of modern-normalize, Preflight is a set of base styles for Tailwind projects that are designed to smooth over cross-browser inconsistencies and make it easier for you to work within the constraints of your design system.
 
   > Tailwind automatically injects these styles when you include @tailwind base in your CSS
+
   ```
   @tailwind base; /* Preflight will be injected here */
 

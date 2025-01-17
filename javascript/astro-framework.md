@@ -1,9 +1,11 @@
 # astro
 
 ## context
+
 - 블로그 만들면서 작성.
 
 ## content
+
 불필요한 자바스크립트를 버린다는 개념. vite도 빌드 할 때 필요한 것만 가져감.
 자바스크립트는 성능 저하
 ![set-astro-1](/assets/set-astro-1.png)

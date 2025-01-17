@@ -5,7 +5,9 @@
 ## Client 클라이언트
 
 ### 모바일도 프로그래밍적으로 보면 컴퓨터라고 보면 될까?
+
 ![정의-클라이언트](/assets/정의-클라이언트.png)
+
 - 공식 문서
 
 DNS
@@ -25,6 +27,7 @@ UI(User Interface)가 사용자와 시스템 사이의 접점이듯, API(Applica
 팀 프로젝트를 하며 'Postman' 툴을 처음 사용해봤다. PM으로 일할 때, 엔지니어 분들이 이 툴로 '데이터 호출 결과'를 보셨던 기억이 난다. 프로젝트에서 API, HTTP 통신 개념을 많이 활용할 것이라 모르는 개념을 방치할 수 없다. 그때 그때 이해해보도록 하자⚡⚡
 
 ## 이름이 왜 Postman? : 이 자체가 클라이언트 역할해줌.
+
 이름은 왜 Postman일까? 클라이언트와 서버 사이 중간에서 무언가 낚아채주는 역할인가? 어떻게 호출 결과를 볼 수 있는지 궁금했다. 공식 문서를 찾아보니, Postman에는'built-in API client'이 있다고 소개하고 있었다. 이 자체가 클라이언트 역할을 해주고 있는 것이었다.
 
 > Postman's built-in API client enables you to create and send API requests, including HTTP, GraphQL, and gRPC requests. <br> Using Postman, you can send a request to an endpoint, retrieve data from a data source, or test an API's functionality. <br> You don't need to enter commands in a terminal or write any code. <br> When you create a new request and select Send, the API response appears right inside Postman. [공식 문서 "Send your first API request"](https://learning.postman.com/docs/getting-started/first-steps/sending-the-first-request/)
@@ -40,4 +43,4 @@ Postman은 브라우저, 프론트엔드 애플리케이션을 대신해서 서�
 오늘 정리를 통해, Postman이 어떻게 API 호출 결과를 보여줄 수 있는지 명확하지 않았는데, 공식 문서를 통해 서버에 요청을 보내는 클라이언트의 역할을 postman이 대신 해준다는 것으로 개념을 세울 수 있었다. Postman이라는 이름도 '우편배달'의 뉘앙스를 품고 있는게 맞는 것 같다.
 
 - Postman 시도 내용
-![postman-api-response](/assets/postman-api-response.png)
+  ![postman-api-response](/assets/postman-api-response.png)

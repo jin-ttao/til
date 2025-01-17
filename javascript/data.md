@@ -1,9 +1,8 @@
-
 # 매개변수
 
 feat. 원시값 & 참조값
 
-``` js
+```js
 function foo(param) {
   console.log(param); // { a: 1, b: 2 }
   param.a = 10; // 외부 스코프 obj 프로퍼티에 영향 있음
@@ -13,7 +12,7 @@ function foo(param) {
 }
 
 const obj = {
-  "a": 1,
-  "b": 2,
-}
+  a: 1,
+  b: 2,
+};
 ```
