@@ -18,6 +18,9 @@
   * [React 공식 문서 - 리스트 렌더링](#react-%EA%B3%B5%EC%8B%9D-%EB%AC%B8%EC%84%9C----%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EB%A0%8C%EB%8D%94%EB%A7%81)
   * [JSX 내부에서 자바스크립트 표현식(expression)만 사용 가능한 이유](#jsx-%EB%82%B4%EB%B6%80%EC%97%90%EC%84%9C-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%ED%91%9C%ED%98%84%EC%8B%9Dexpression%EB%A7%8C-%EC%82%AC%EC%9A%A9-%EA%B0%80%EB%8A%A5%ED%95%9C-%EC%9D%B4%EC%9C%A0)
   * [React Router](#react-router)
+- [알고리즘](#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
+  * [알고리즘 풀고 배운 것](#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%92%80%EA%B3%A0-%EB%B0%B0%EC%9A%B4-%EA%B2%83)
+  * [알고리즘 풀이 습관 복기](#%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%ED%92%80%EC%9D%B4-%EC%8A%B5%EA%B4%80-%EB%B3%B5%EA%B8%B0)
 
 <!-- tocstop -->
 
@@ -84,3 +87,21 @@
   - 중첩된 컴포넌트는 동시 렌더링이 되기 때문에 두 컴포넌트에서 정보를 어느정도 공유하는 것 '처럼' 쓸 수 있다.
   - 중첩 라우팅은 순서대로 부모 > 자식 호출될 것을 보장해주나?
 
+<br>
+
+# 알고리즘
+
+- 알고리즘 연습과정을 구체적으로 기록해본다. 문제를 쪼개고, 생각을 코드로 만들어내는 과정이 어떻게 진행되는지.
+- 예시
+  > - (고민) 배열을 순회하면서 각 요소가 포함된 개수를 반드시 세어야 하는가? 모두 순회하지 않고 세는 방법은 없을까? 그나저나 순회하는 것이 늘 좋지 않은 방법이라 볼 수 있는가?
+  > - (접근) 우선 문제를 푸는 것이 효율적으로 푸는 것 보다 우선임. 의사코드 기록.
+  > - 궁극적으로 결과를 도출해야 하는 건 ‘가장 많이 등장하는 요소’를 찾는 것. 개수가 반드시 과반이라는 조건도 나왔는데 힌트일 수 있음.
+  > - 풀고 해설지를 보니 "Boyer-Moore 알고리즘"이라는 것이 있었다. 이게 위 고민들과 연관성이 있었다.
+
+<br>
+
+## 알고리즘 풀고 배운 것
+[문서 바로가기](https://github.com/jin-ttao/til/blob/main/algorithm/algorithm-checkout.md)
+
+## 알고리즘 풀이 습관 복기
+[문서 바로가기](https://github.com/jin-ttao/til/blob/main/algorithm/algorithm-review.md)

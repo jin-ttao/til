@@ -246,7 +246,7 @@ const containsDuplicate = function(nums) {
 
 <br>
 
-## 2619. Array Prototype Last
+## majorityElement
 
 ```js
  * @param {number[]} nums
