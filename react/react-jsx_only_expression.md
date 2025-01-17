@@ -33,10 +33,10 @@
 1. JSX는 마크업을 위해 결국 HTML '값'을 반환해야 함. 그 자체로 '값'으로 볼 수 있는 코드(표현식)를 JSX는 그나마 유연하게 허용해줌.
 
 - 참고: [마크업은 프로그래밍(연산)과 무관하다](https://www.inflearn.com/pages/infmation-61-20230404?srsltid=AfmBOopT8EFOr_fAI1bo2W6wUF8qtRpbVef4QiTOYcfRbnag8Gwey6Pb)
-  ![HTML마크업](HTML마크업.png)
+  <img width="300" alt="HTML마크업" src="/assets/HTML마크업.png" >
 
 2. React는 주문만 받고 요리는 하지 않는 ‘웨이터’. 개발자에게든, 사용자에게든 주문(value, event)을 받기만 하고 직접 지지고 볶고(연산, statement) 하지 않음. 여기서 받은 대로 저기로 전하기만 할 뿐임.
-   ![요리(연산 등 작업) 안하고 전달만 하는 리액트](요리(연산 등 작업) 안하고 전달만 하는 리액트.png)
+  <img width="300" alt="요리(연산 등 작업) 안하고 전달만 하는 리액트" src="/assets/요리(연산 등 작업) 안하고 전달만 하는 리액트" >
 
 ### 2/ 문법적 관점 : `React.createElement`함수 인자로 전달 될 수 있는 것만 가능.
 
@@ -57,13 +57,13 @@
 
 - 참고 [공식 문서 createElement 함수](https://ko.react.dev/reference/react/createElement)
 
-- ![createElement](createElement.png)
+- <img width="300" alt="createElement" src="/assets/createElement.png" >
 
-![imgage-jsx-to-jsobject](imgage-jsx-to-jsobject.png)
+<img width="300" alt="imgage-jsx-to-jsobject" src="/assets/imgage-jsx-to-jsobject.png" >
 
 - 실험 내용
 
-![jsx-test](jsx-test.png)
+<img width="300" alt="jsx-test.png" src="/assets/jsx-test.png" >
 
 <br>
 
@@ -75,7 +75,7 @@
 
 - 작업 수행하는 코드 vs 값을 내는 코드
 
-  - ![statement vs expression](statement vs expression.png)
+  - <img width="300" alt="statement-expression" src="/assets/statement vs expression.png" >
 
 - 참고) expression은 statement의 일부 ([링크](https://shoark7.github.io/programming/knowledge/expression-vs-statement))
   - expression들은 평가(evaluate)가 가능해서 하나의 ‘값’으로 환원된다

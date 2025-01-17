@@ -83,26 +83,3 @@ key에는 배열 내 위치로 쓰기에는 ‘변할 수 있고’ == 식별 �
 
 ### 4. 참고: spread 구문 사용 가능 + prop의 key 명시 안해줘도 되는 경우가 있음.
 
-<br>
-
-# React 조건부 렌더링
-
-## context
-
-> 조건부 렌더링 [공식 문서](https://ko.react.dev/learn/conditional-rendering)
-
-## opinion
-
-### 1.
-
-### 2.
-
-### 3.
-
-## research
-
-### 1.
-
-### 2.
-
-### 3.
