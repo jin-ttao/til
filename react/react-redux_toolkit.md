@@ -6,7 +6,7 @@
 
 ## content - opinion
 
-![react-redux-realtionship](/src/image/react-redux-files-overview.jpg)
+![react-redux-realtionship](/assets/react-redux-files-overview.jpg)
 
 ### createSlice에서 왜 'slice'라고 이름을 붙였을까?
 https://redux-toolkit.js.org/api/createSlice

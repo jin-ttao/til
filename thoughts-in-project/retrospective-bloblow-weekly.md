@@ -22,8 +22,9 @@
 팀 프로젝트로 PR(Pull Request)에 대한 코드 리뷰를 처음 하고 있는데, 최소 2시간 최대 4시간을 썼다. 이번주 우리는 총 10개의 Pull Request를 작성했다. (오늘 주말 까지 하면 14-15개 까지, Client와 Server 개수는 비슷)
 <br>
 
-![im](/src/image/project-bloblow-pr-client1.png)
-![](/src/image/project-bloblow-pr-server1.png)
+![project-bloblow-pr-client1](/assets/project-bloblow-pr-client1.png)
+![project-bloblow-pr-server1](/assets/project-bloblow-pr-server1.png)
+
 <br>
 
 프로젝트 시작 전 부터 코드 리뷰를 중요하게 생각했지만, 기능 구현 못지 않게 시간을 쏟았다. 그래서 최근 우리 팀의 코드 리뷰 방식에 대해 고민이 많았다. 리뷰는 효율적으로 이뤄지고 있는지, 정말 중요한 부분에 집중하고 있는지 궁금했다. 이런 고민을 안고, 주변에 의견을 구하고 구글링을 하면서 몇 가지 얻은 레슨이 있어서 메모해두려고 한다.
@@ -42,7 +43,7 @@
 
 위 레슨을 얻고 바로 실천한 액션 아이템은, "팀 내 변수명 컨벤션 정하기".
 - 코드 리뷰에서는 더 중요한 것에 집중하고, 코드를 작성할 때에도 고민하는 시간이 줄이고 싶었다.
-![project-bloblow-변수명컨벤션](/src/image/project-bloblow-변수명컨벤션.png)
+![project-bloblow-변수명컨벤션](/assets/project-bloblow-변수명컨벤션.png)
 - 팀원들과 변수명 기준을 하나씩 정하게 되었고, 나부터 코드를 작성할 때 기준들을 유용하게 참고하고 있다.
 - 프로젝트가 끝나면 관련 리뷰 수를 비교해서 개선을 측정해보자.
 
@@ -114,7 +115,8 @@ const 비동기함수 = async (keywordInfo) => {
 #### Keep: 사전에 UI, API 구현에 대한 청사진을 시각적으로 공유해서 서로 생각하는 그림을 맞추고 작업 시작함.
 - 우리가 고민해볼 수 있는 옵션들, 실제 회사에서 어떻게 하는지 사례도 추가로 공유함.
 - 팀 내 KPT 회고에서도 생산성 올릴 수 있는 방향으로 보고 협업 방식 개선에 기여해봄.
-<img src="../../src/image/project-bloblow-kpt-api.png" width="400" alt="project-bloblow-kpt-api">
+
+<img src="/assets/project-bloblow-kpt-api.png" width="400" alt="project-bloblow-kpt">
 
 #### Problem: 작업 예상 시간을 최대한 정확하게 예상해보려고 하기. 처음 하는 작업 많다곤 하지만, 예상 보다 더 오래 걸린다.
 - 처음 시도하는 작업이 많아 특히 그럴 수 있음. 계속 근접하게 작업 Estimation 할 것.

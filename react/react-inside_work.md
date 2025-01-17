@@ -4,7 +4,7 @@
 ## Opinion
 
 ### infinite loop Error가 발생했는데, 유용한 정보들이 있는 듯 하다. 리액트 내부 동작 알 수 있는 부분들 체크.
-![react-error-infinite-loop](/src/image/react-error-infinite-loop.png)
+![react-error-infinite-loop](/assets/react-error-infinite-loop.png)
 
 ### React Strict Mode는 정확히 왜 존재하나?
 - 부수 효과 검출을 위해 존재하나. 그만큼 부수효과가 치명적인걸까. 만약 검출하고 나서 결과에 따라서 리액트가 어떻게 해줄까?
@@ -12,7 +12,7 @@
 ## Learned
 
 리액트는 계산하지 않고, 전달 받은 '값'을 그리기만 할 뿐.
-![reac-inside-creatElement](/src/image/reac-inside-creatElement.png)
+![reac-inside-creatElement](/assets/reac-inside-creatElement.png)
 
 
 - 추가로 확인

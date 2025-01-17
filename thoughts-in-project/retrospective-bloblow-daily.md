@@ -85,7 +85,7 @@
 - 메모) 보통 에러는 어떤 시나리오일때? 형식에 안맞는 요청, 이상한 요청... 로그인 없이 진입, 권한 없는 곳 진입하려고 할때 (화면에 보여서 진입, url 다이렉트 진입)
 - 논리적으로 정의하면 될 것. 에러 정의 전에 정상적인 케이스를 육하원칙으로 정의할 것 (누가 언제 무엇을 어떻게 왜 하는지) 이 경우를 총족시키지 않은 것을 에러로 정의하면 되지 않을까?
 - 오늘 YouTube Data API 공식 문서의 오류 파트를 보면서 어떻게 작성하는지 이해했다. 결국 중요한 것은 "어떤 상황"인지 최대한 명확하게 기재가 되어야 하는 것 같다.
-![rt-bloblow-youtube-api](/src/image/rt-bloblow-youtube-api.png)
+![rt-bloblow-youtube-api](/assets/rt-bloblow-youtube-api.png)
 
 #### 프레임워크가 필요한 이유, 단지 편해서?
 - 가독성을 위한 건가? 모두가 코드를 다르게 작성하기 때문에 애초에 문법을 구체적으로 정하기 위해 사용되는건가?
@@ -213,12 +213,12 @@
 - 템플릿 짜두면 편할 것.
 
 #### 크롤링, 차트, 게시물 목록 기능이 얼추 구현되고 당근알바 검색해봄. 실제 문제 해결 한 경험을 해본 것. 짜릿하다.
-![rt-bloblow-youtube-karrot-sample](/src/image/rt-bloblow-youtube-karrot-sample.png)
+![rt-bloblow-youtube-karrot-sample](/assets/rt-bloblow-youtube-karrot-sample.png)
 
 #### 아이디어) 현재 에셋 뭐가 있는지 한 판 볼 수 있으면 좋겠다. 변수명 만으로는 알기 힘듦. 코드 상으로도 알 수 없고.
 
 #### 다른 서비스 참고하면서 스타일링 참고하는 것도 좋은 방법이겠다.
-- ![rt-bloblow-ref-ohouse](/src/image/rt-bloblow-ref-ohouse.png)
+- ![rt-bloblow-ref-ohouse](/assets/rt-bloblow-ref-ohouse.png)
 
 #### 유저가 많을 때는 에러를 어떻게 확인하는지 궁금하다. 지금은 유저가 없어서 우리 자체가 확인하지만.
 
@@ -243,7 +243,7 @@
 #### 코드 리뷰 할 때 각 컴포넌트가 어떤 관계인지 충분히 알고 있다면 코드리뷰 하기 좋겠다.
 
 #### 이렇게 한다고 어떻게 라이브러리 메소드들을 쓸 수 있게 되는건가? 인스턴스로 인한 것인가?
-![bloblow-chartjs](/src/image/rt-bloblow-chartjs.png)
+![bloblow-chartjs](/assets/rt-bloblow-chartjs.png)
 
 ### 11.19
 #### 정렬 기능 구현할 때 가장 중요한 건 동점이 없도록 하는 것. 정렬 기준 여러개 사용할 수도 있어야.

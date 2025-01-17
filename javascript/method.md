@@ -88,7 +88,7 @@ console.log(sum); // 3
 <br>
 
 #### 배열간 합치고 싶다면, `spread operator(...)` or `concat()`
-![js-method-concat-spread](/src/image/js-method-concat-spread.png)
+![js-method-concat-spread](/assets/js-method-concat-spread.png)
 
 ### Object
 

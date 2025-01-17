@@ -537,7 +537,7 @@ var canConstruct = function(ransomNote, magazine) {
 #### 바로 생각나지 않고 헷갈렸던 점: 객체 프로퍼티를 동적으로 생성하기 - 처음에 `obj[key] += 1` 코드로 정확하지 않는 근거로 코드를 작성함. 객체 프로퍼티에 연산할 때, 논리 연산자로 값이 있을 때와 없을 때에 따라 조건 나눠주기. `객체[key] = (객체[key] || 0) + 1;`
 
 #### '단축 평가(short-circuiting)' 개념 짚고 넘어가기: 첫 피연산자로 결론 나면 그걸로 땡!
-![short-circuiting](/src/image/short-circuiting.png)
+![short-circuiting](/assets/short-circuiting.png)
 - 단축 평가란 논리 연산의 결과가 첫 피연산자에 의해 확정될 때, 두 번째 피연산자 평가는 굳이 하지 않는 것.
 
 #### 논리 연산자는 결국 피연산자 둘 중 하나의 값을 반환한다. 그래서 Boolean 값에 쓰일 때는 당연히 Boolean 값이 반환되는데, Boolean이 아닌 숫자, 문자열 같은 값에 쓰여도 Boolean이 아닌 결과가 반환될 수 있는 것.
