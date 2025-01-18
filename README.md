@@ -40,7 +40,7 @@
 
 [Notion - 개발일지 바로가기](https://jinttao.notion.site/17b4196d295c8044b269e3e7e7634ab7?v=4aed31d07f0748e291c64f6dc732dff7&pvs=4)<br>
 
-<img width="300" alt="welcome-toast-note" src="assets/img-wt-note.png">
+<img width="500" alt="welcome-toast-note" src="assets/img-wt-note.png">
 
 \_<br>
 [GitHub - 연동 스크립트](https://github.com/welcome-toast/welcome-toast)<br>
@@ -162,8 +162,14 @@
 
 ## 알고리즘 풀고 배운 것
 
-[문서 바로가기](https://github.com/jin-ttao/til/blob/main/algorithm/algorithm-checkout.md)
+[문서 바로가기 (*새 페이지로 이동)](https://github.com/jin-ttao/til/blob/main/algorithm/algorithm-checkout.md)
+
+<img width="500" alt="toc-check" src="assets/toc-checkout.png">
+
+<br>
 
 ## 알고리즘 풀이 습관 복기
 
-[문서 바로가기](https://github.com/jin-ttao/til/blob/main/algorithm/algorithm-review.md)
+[문서 바로가기 (*새 페이지로 이동)](https://github.com/jin-ttao/til/blob/main/algorithm/algorithm-review.md)
+
+<img width="500" alt="toc-review" src="assets/toc-review.png">
