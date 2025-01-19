@@ -14,7 +14,7 @@
 
 리액트 공식 문서에서도 컴포넌트를 이렇게 정의한다.
 
-<img width="500" alt="reusable-component" src="assets/reusable-component.png">
+<img width="500" alt="reusable-component" src="/assets/reusable-component.png">
 
 1. **마크업, CSS, JavsScript 를**
 2. 앱의 ‘재사용 가능한(reusable)’ UI 요소로
