@@ -1,8 +1,9 @@
 ---
 icon: hand-wave
+coverY: 0
 ---
 
-# README
+# ⏭️ Jintae's Wiki
 
 ## thoughts over theories
 
@@ -31,8 +32,27 @@ icon: hand-wave
   * [알고리즘 풀이 습관 복기](./#알고리즘-풀이-습관-복기)
 
 \
-\
 
+
+{% stepper %}
+{% step %}
+### gg
+
+ghg
+{% endstep %}
+
+{% step %}
+###
+
+
+{% endstep %}
+
+{% step %}
+###
+
+
+{% endstep %}
+{% endstepper %}
 
 ## 프로젝트 개발일지
 

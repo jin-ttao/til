@@ -1,6 +1,6 @@
 # Table of contents
 
-* [README](README.md)
+* [⏭️ Jintae's Wiki](README.md)
 * [name-definition](name-definition.md)
 * [programming 하면서](programming.md)
 * [h1](template.md)
