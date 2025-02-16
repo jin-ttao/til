@@ -1,2 +1,6 @@
-# algorithm
+---
+icon: '3'
+---
+
+# Algorithm
 
