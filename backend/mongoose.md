@@ -1,12 +1,5 @@
 # mongoose
 
-<!-- toc -->
-
-- [왜 `.exec` 메소드를 사용할까?](#%EC%99%9C-exec-%EB%A9%94%EC%86%8C%EB%93%9C%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0%EA%B9%8C)
-  - [`.exec` 실제로 활용해봄 (업데이트 24.11.11)](#exec-%EC%8B%A4%EC%A0%9C%EB%A1%9C-%ED%99%9C%EC%9A%A9%ED%95%B4%EB%B4%84-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-241111)
-
-<!-- tocstop -->
-
 ### 왜 `.exec` 메소드를 사용할까?
 
 - .exec 메소드를 안쓰면

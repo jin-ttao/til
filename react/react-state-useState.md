@@ -1,30 +1,5 @@
 # React State
 
-<!-- toc -->
-
-- [context](#context)
-- [opinion](#opinion)
-  - [1. 무엇을 state로, 어디에 둘 것인가? React는 편리하지만, 꼭 필요한 경우에만 쓸 것을 강조한다.](#1-%EB%AC%B4%EC%97%87%EC%9D%84-state%EB%A1%9C-%EC%96%B4%EB%94%94%EC%97%90-%EB%91%98-%EA%B2%83%EC%9D%B8%EA%B0%80-react%EB%8A%94-%ED%8E%B8%EB%A6%AC%ED%95%98%EC%A7%80%EB%A7%8C-%EA%BC%AD-%ED%95%84%EC%9A%94%ED%95%9C-%EA%B2%BD%EC%9A%B0%EC%97%90%EB%A7%8C-%EC%93%B8-%EA%B2%83%EC%9D%84-%EA%B0%95%EC%A1%B0%ED%95%9C%EB%8B%A4)
-  - [2. 다른 코드 벤치마크할 때, 무엇을 state로 관리하는지, 무엇을 컴포넌트로 만들었는지 보면 어떤 생각으로 문제를 해결하려고 했는지 보일 것 같다.](#2-%EB%8B%A4%EB%A5%B8-%EC%BD%94%EB%93%9C-%EB%B2%A4%EC%B9%98%EB%A7%88%ED%81%AC%ED%95%A0-%EB%95%8C-%EB%AC%B4%EC%97%87%EC%9D%84-state%EB%A1%9C-%EA%B4%80%EB%A6%AC%ED%95%98%EB%8A%94%EC%A7%80-%EB%AC%B4%EC%97%87%EC%9D%84-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A1%9C-%EB%A7%8C%EB%93%A4%EC%97%88%EB%8A%94%EC%A7%80-%EB%B3%B4%EB%A9%B4-%EC%96%B4%EB%96%A4-%EC%83%9D%EA%B0%81%EC%9C%BC%EB%A1%9C-%EB%AC%B8%EC%A0%9C%EB%A5%BC-%ED%95%B4%EA%B2%B0%ED%95%98%EB%A0%A4%EA%B3%A0-%ED%96%88%EB%8A%94%EC%A7%80-%EB%B3%B4%EC%9D%BC-%EA%B2%83-%EA%B0%99%EB%8B%A4)
-  - [3.](#3)
-- [research](#research)
-  - [1.](#1)
-  - [2.](#2)
-  - [3.](#3-1)
-
-* [h1](#h1)
-  - [context](#context-1)
-  - [opinion](#opinion-1)
-    - [1.](#1-1)
-    - [2.](#2-1)
-    - [3.](#3-2)
-  - [research](#research-1)
-    - [1.](#1-2)
-    - [2.](#2-2)
-    - [3.](#3-3)
-
-<!-- tocstop -->
-
 ## context
 
 <br>

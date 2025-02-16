@@ -1,12 +1,5 @@
 # Solve Problems
 
-<!-- toc -->
-
-- [context](#context)
-- [content](#content)
-
-<!-- tocstop -->
-
 ## context
 
 - 개발자는 문제를 해결하는 역할. 개발자가 해결하는 문제란 무엇일까, 중요한 문제에 집중하려면?

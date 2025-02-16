@@ -1,23 +1,5 @@
 # React Router
 
-<!-- toc -->
-
-- [opinion](#opinion)
-  - [(복기) 모달을 라우트로 제어한 것을 개선하기. 상태로 처리하는게 나았을 것.](#%EB%B3%B5%EA%B8%B0-%EB%AA%A8%EB%8B%AC%EC%9D%84-%EB%9D%BC%EC%9A%B0%ED%8A%B8%EB%A1%9C-%EC%A0%9C%EC%96%B4%ED%95%9C-%EA%B2%83%EC%9D%84-%EA%B0%9C%EC%84%A0%ED%95%98%EA%B8%B0-%EC%83%81%ED%83%9C%EB%A1%9C-%EC%B2%98%EB%A6%AC%ED%95%98%EB%8A%94%EA%B2%8C-%EB%82%98%EC%95%98%EC%9D%84-%EA%B2%83)
-  - [사용자의 로그인 여부를 App 컴포넌트에서만 하는게 좋을까, 각 페이지 컴포넌트에서 하는게 좋을까?](#%EC%82%AC%EC%9A%A9%EC%9E%90%EC%9D%98-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%97%AC%EB%B6%80%EB%A5%BC-app-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90%EC%84%9C%EB%A7%8C-%ED%95%98%EB%8A%94%EA%B2%8C-%EC%A2%8B%EC%9D%84%EA%B9%8C-%EA%B0%81-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%97%90%EC%84%9C-%ED%95%98%EB%8A%94%EA%B2%8C-%EC%A2%8B%EC%9D%84%EA%B9%8C)
-    - [배경: 로그인 여부 검사를 안전하게 했는지 스스로 대답하기 어려웠던 상황이었다.](#%EB%B0%B0%EA%B2%BD-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%97%AC%EB%B6%80-%EA%B2%80%EC%82%AC%EB%A5%BC-%EC%95%88%EC%A0%84%ED%95%98%EA%B2%8C-%ED%96%88%EB%8A%94%EC%A7%80-%EC%8A%A4%EC%8A%A4%EB%A1%9C-%EB%8C%80%EB%8B%B5%ED%95%98%EA%B8%B0-%EC%96%B4%EB%A0%A4%EC%9B%A0%EB%8D%98-%EC%83%81%ED%99%A9%EC%9D%B4%EC%97%88%EB%8B%A4)
-    - [답변: 정답은 없고, 상황 마다 다르다. 본인이 '언제 어디서 로그인을 검사할 것인지' 먼저 정의하는게 중요하고, 그것에 맞게 정확히 구현하는 것이 더 중요하다.](#%EB%8B%B5%EB%B3%80-%EC%A0%95%EB%8B%B5%EC%9D%80-%EC%97%86%EA%B3%A0-%EC%83%81%ED%99%A9-%EB%A7%88%EB%8B%A4-%EB%8B%A4%EB%A5%B4%EB%8B%A4-%EB%B3%B8%EC%9D%B8%EC%9D%B4-%EC%96%B8%EC%A0%9C-%EC%96%B4%EB%94%94%EC%84%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8%EC%9D%84-%EA%B2%80%EC%82%AC%ED%95%A0-%EA%B2%83%EC%9D%B8%EC%A7%80-%EB%A8%BC%EC%A0%80-%EC%A0%95%EC%9D%98%ED%95%98%EB%8A%94%EA%B2%8C-%EC%A4%91%EC%9A%94%ED%95%98%EA%B3%A0-%EA%B7%B8%EA%B2%83%EC%97%90-%EB%A7%9E%EA%B2%8C-%EC%A0%95%ED%99%95%ED%9E%88-%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B4-%EB%8D%94-%EC%A4%91%EC%9A%94%ED%95%98%EB%8B%A4)
-    - [답변에 대한 의견: 로그인 여부를 점검하고 싶은 규칙을 내가 먼저 정의하고, 그걸 정확하게 구현하는 것이 중요하겠다. / 질문 장황하게 하지 말고, 핵심만 3문장으로 줄여보는 연습.](#%EB%8B%B5%EB%B3%80%EC%97%90-%EB%8C%80%ED%95%9C-%EC%9D%98%EA%B2%AC-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%97%AC%EB%B6%80%EB%A5%BC-%EC%A0%90%EA%B2%80%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9D%80-%EA%B7%9C%EC%B9%99%EC%9D%84-%EB%82%B4%EA%B0%80-%EB%A8%BC%EC%A0%80-%EC%A0%95%EC%9D%98%ED%95%98%EA%B3%A0-%EA%B7%B8%EA%B1%B8-%EC%A0%95%ED%99%95%ED%95%98%EA%B2%8C-%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94-%EA%B2%83%EC%9D%B4-%EC%A4%91%EC%9A%94%ED%95%98%EA%B2%A0%EB%8B%A4--%EC%A7%88%EB%AC%B8-%EC%9E%A5%ED%99%A9%ED%95%98%EA%B2%8C-%ED%95%98%EC%A7%80-%EB%A7%90%EA%B3%A0-%ED%95%B5%EC%8B%AC%EB%A7%8C-3%EB%AC%B8%EC%9E%A5%EC%9C%BC%EB%A1%9C-%EC%A4%84%EC%97%AC%EB%B3%B4%EB%8A%94-%EC%97%B0%EC%8A%B5)
-    - [적용해본 것: before, after 비교 - 뭐가 다를까?](#%EC%A0%81%EC%9A%A9%ED%95%B4%EB%B3%B8-%EA%B2%83-before-after-%EB%B9%84%EA%B5%90---%EB%AD%90%EA%B0%80-%EB%8B%A4%EB%A5%BC%EA%B9%8C)
-- [중첩 라우팅](#%EC%A4%91%EC%B2%A9-%EB%9D%BC%EC%9A%B0%ED%8C%85)
-  - [``으로 prop 넘겨주려면 Hook을 사용해야 한다. (`useoutletcontext`)](#%EC%9C%BC%EB%A1%9C-prop-%EB%84%98%EA%B2%A8%EC%A3%BC%EB%A0%A4%EB%A9%B4-hook%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%9C%EB%8B%A4-useoutletcontext)
-- [Router Hook](#router-hook)
-  - [useNavigate](#usenavigate)
-    - [navigate이 어떤 과정으로 진행되는지 알아?: URL 변경 > 그에 맞는 컴포넌트 준비 > Route 설정된 맨 위부터 리렌더링 시작 > 변경된 부분만 커밋.](#navigate%EC%9D%B4-%EC%96%B4%EB%96%A4-%EA%B3%BC%EC%A0%95%EC%9C%BC%EB%A1%9C-%EC%A7%84%ED%96%89%EB%90%98%EB%8A%94%EC%A7%80-%EC%95%8C%EC%95%84-url-%EB%B3%80%EA%B2%BD--%EA%B7%B8%EC%97%90-%EB%A7%9E%EB%8A%94-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%A4%80%EB%B9%84--route-%EC%84%A4%EC%A0%95%EB%90%9C-%EB%A7%A8-%EC%9C%84%EB%B6%80%ED%84%B0-%EB%A6%AC%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%8B%9C%EC%9E%91--%EB%B3%80%EA%B2%BD%EB%90%9C-%EB%B6%80%EB%B6%84%EB%A7%8C-%EC%BB%A4%EB%B0%8B)
-  - [useEffect 의존성 배열로 `useNavigate()`의 return 값인 `navigate`를 포함해도 될까? #다시보기](#useeffect-%EC%9D%98%EC%A1%B4%EC%84%B1-%EB%B0%B0%EC%97%B4%EB%A1%9C-usenavigate%EC%9D%98-return-%EA%B0%92%EC%9D%B8-navigate%EB%A5%BC-%ED%8F%AC%ED%95%A8%ED%95%B4%EB%8F%84-%EB%90%A0%EA%B9%8C-%23%EB%8B%A4%EC%8B%9C%EB%B3%B4%EA%B8%B0)
-
-<!-- tocstop -->
-
 ## opinion
 
 ### (복기) 모달을 라우트로 제어한 것을 개선하기. 상태로 처리하는게 나았을 것.

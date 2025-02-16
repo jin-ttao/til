@@ -1,18 +1,15 @@
 # programming 하면서
 
-<!-- toc -->
+## 개발 의사결정
 
-- [내 습관 분석](#%EB%82%B4-%EC%8A%B5%EA%B4%80-%EB%B6%84%EC%84%9D)
-  * [명시적으로 코드를 작성하려는 성향이 자주 발견되는 것 같다. ⇒ 기존에 검증된 다양한 패턴을 학습하는게 필요하겠다.](#%EB%AA%85%EC%8B%9C%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EB%A0%A4%EB%8A%94-%EC%84%B1%ED%96%A5%EC%9D%B4-%EC%9E%90%EC%A3%BC-%EB%B0%9C%EA%B2%AC%EB%90%98%EB%8A%94-%EA%B2%83-%EA%B0%99%EB%8B%A4-%E2%87%92-%EA%B8%B0%EC%A1%B4%EC%97%90-%EA%B2%80%EC%A6%9D%EB%90%9C-%EB%8B%A4%EC%96%91%ED%95%9C-%ED%8C%A8%ED%84%B4%EC%9D%84-%ED%95%99%EC%8A%B5%ED%95%98%EB%8A%94%EA%B2%8C-%ED%95%84%EC%9A%94%ED%95%98%EA%B2%A0%EB%8B%A4)
-  * [그럼, 명시적으로 코드 작성하려는 습관은 원인이 뭘까.](#%EA%B7%B8%EB%9F%BC-%EB%AA%85%EC%8B%9C%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1%ED%95%98%EB%A0%A4%EB%8A%94-%EC%8A%B5%EA%B4%80%EC%9D%80-%EC%9B%90%EC%9D%B8%EC%9D%B4-%EB%AD%98%EA%B9%8C)
-  * [매일 했던 방식으로 개발하면 소용 없다. 그냥 일회성 개발하는 것. 외주 개발과 다를 것 없음. 어제와 다르게 하게 된 건 뭔지 기록하기](#%EB%A7%A4%EC%9D%BC-%ED%96%88%EB%8D%98-%EB%B0%A9%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EA%B0%9C%EB%B0%9C%ED%95%98%EB%A9%B4-%EC%86%8C%EC%9A%A9-%EC%97%86%EB%8B%A4-%EA%B7%B8%EB%83%A5-%EC%9D%BC%ED%9A%8C%EC%84%B1-%EA%B0%9C%EB%B0%9C%ED%95%98%EB%8A%94-%EA%B2%83-%EC%99%B8%EC%A3%BC-%EA%B0%9C%EB%B0%9C%EA%B3%BC-%EB%8B%A4%EB%A5%BC-%EA%B2%83-%EC%97%86%EC%9D%8C-%EC%96%B4%EC%A0%9C%EC%99%80-%EB%8B%A4%EB%A5%B4%EA%B2%8C-%ED%95%98%EA%B2%8C-%EB%90%9C-%EA%B1%B4-%EB%AD%94%EC%A7%80-%EA%B8%B0%EB%A1%9D%ED%95%98%EA%B8%B0)
-- [개선해보자](#%EA%B0%9C%EC%84%A0%ED%95%B4%EB%B3%B4%EC%9E%90)
-  * [리팩토링 - 상태 업데이트 더 효율적으로 할 수 있는 방법 있을 듯… 우선 상수로 1차 개선](#%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81---%EC%83%81%ED%83%9C-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%EB%8D%94-%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9C%BC%EB%A1%9C-%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EB%B0%A9%EB%B2%95-%EC%9E%88%EC%9D%84-%EB%93%AF-%EC%9A%B0%EC%84%A0-%EC%83%81%EC%88%98%EB%A1%9C-1%EC%B0%A8-%EA%B0%9C%EC%84%A0)
-  * [CSS 공통 모듈로 하는 것 얼른 적용시켜야겠다. 일일이 찾아서 해주기 번거롭네…](#css-%EA%B3%B5%ED%86%B5-%EB%AA%A8%EB%93%88%EB%A1%9C-%ED%95%98%EB%8A%94-%EA%B2%83-%EC%96%BC%EB%A5%B8-%EC%A0%81%EC%9A%A9%EC%8B%9C%EC%BC%9C%EC%95%BC%EA%B2%A0%EB%8B%A4-%EC%9D%BC%EC%9D%BC%EC%9D%B4-%EC%B0%BE%EC%95%84%EC%84%9C-%ED%95%B4%EC%A3%BC%EA%B8%B0-%EB%B2%88%EA%B1%B0%EB%A1%AD%EB%84%A4)
-- [아이디어](#%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4)
-  * [리액트에서 컴포넌트 directory 위치 바꾸면 알아서 import path도 업데이트 해주는거 없나…](#%EB%A6%AC%EC%95%A1%ED%8A%B8%EC%97%90%EC%84%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-directory-%EC%9C%84%EC%B9%98-%EB%B0%94%EA%BE%B8%EB%A9%B4-%EC%95%8C%EC%95%84%EC%84%9C-import-path%EB%8F%84-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%95%B4%EC%A3%BC%EB%8A%94%EA%B1%B0-%EC%97%86%EB%82%98)
+### welcome-toast 스크립트 버전 관리 구조를 어떻게 짜면 좋을지 고민
+웰컴 토스트  이다. (버전 관리 vs 캐시) ⇒ 명시적으로 버전 관리하는 방식이 일반적임 + 명시적인 작성에서 오는 이점 (정확성 + 캐싱)을 취한다.
+- 가장 이상적인 DX 정의
+  - 웰컴 토스트를 사용하는 개발자가 웰컴 토스트의 스크립트 버전 관리를 안할 수 없을까?
+  - 프로젝트별로 API_key만 다르도록.
 
-<!-- tocstop -->
+- 기타
+  - 캐시도 성능을 위한 도구이다.
 
 <br>
 
@@ -76,10 +73,7 @@ useEffect(() => {
     }
   }
 
-  if (canCloseBackgroundClick) {
-    window.addEventListener("click", handleModalBackgroundClick);
-    return () => window.removeEventListener("click", handleModalBackgroundClick);
-  }
+  // ...
 }, [setIsOpenModal, canCloseBackgroundClick]);
 ```
 

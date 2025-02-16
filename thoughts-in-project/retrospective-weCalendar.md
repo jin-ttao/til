@@ -1,19 +1,5 @@
 # React 프로젝트 weCalendar 회고
 
-<!-- toc -->
-
-- [Context](#context)
-- [Day2 (2024.10.22)](#day2-20241022)
-  - [구글 캘린더 API 연동, OAuth 도전, 쉽지 않지만 흥미롭다. event를 구독하는 Firebase 방식이 아니라, 현업에서 많이 사용하는 REST API 방식으로 소통하는 프로젝트를 만드는 과정을 시도하는 것 자체가 즐겁다!](#%EA%B5%AC%EA%B8%80-%EC%BA%98%EB%A6%B0%EB%8D%94-api-%EC%97%B0%EB%8F%99-oauth-%EB%8F%84%EC%A0%84-%EC%89%BD%EC%A7%80-%EC%95%8A%EC%A7%80%EB%A7%8C-%ED%9D%A5%EB%AF%B8%EB%A1%AD%EB%8B%A4-event%EB%A5%BC-%EA%B5%AC%EB%8F%85%ED%95%98%EB%8A%94-firebase-%EB%B0%A9%EC%8B%9D%EC%9D%B4-%EC%95%84%EB%8B%88%EB%9D%BC-%ED%98%84%EC%97%85%EC%97%90%EC%84%9C-%EB%A7%8E%EC%9D%B4-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-rest-api-%EB%B0%A9%EC%8B%9D%EC%9C%BC%EB%A1%9C-%EC%86%8C%ED%86%B5%ED%95%98%EB%8A%94-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A5%BC-%EB%A7%8C%EB%93%9C%EB%8A%94-%EA%B3%BC%EC%A0%95%EC%9D%84-%EC%8B%9C%EB%8F%84%ED%95%98%EB%8A%94-%EA%B2%83-%EC%9E%90%EC%B2%B4%EA%B0%80-%EC%A6%90%EA%B2%81%EB%8B%A4)
-  - [기능 분할 설계 FSD 첫 시도](#%EA%B8%B0%EB%8A%A5-%EB%B6%84%ED%95%A0-%EC%84%A4%EA%B3%84-fsd-%EC%B2%AB-%EC%8B%9C%EB%8F%84)
-- [Day1 (2024.10.21)](#day1-20241021)
-  - [project 시작한 배경](#project-%EC%8B%9C%EC%9E%91%ED%95%9C-%EB%B0%B0%EA%B2%BD)
-  - [혼자 project를 시작하고 꾸려간다는 것](#%ED%98%BC%EC%9E%90-project%EB%A5%BC-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B3%A0-%EA%BE%B8%EB%A0%A4%EA%B0%84%EB%8B%A4%EB%8A%94-%EA%B2%83)
-  - [React 공식문서가 말하는 'state' 리마인드](#react-%EA%B3%B5%EC%8B%9D%EB%AC%B8%EC%84%9C%EA%B0%80-%EB%A7%90%ED%95%98%EB%8A%94-state-%EB%A6%AC%EB%A7%88%EC%9D%B8%EB%93%9C)
-  - [디버깅: Tailwind 적용하려면 왜 개발 서버를 다시 시작해야 하나? #다시보기](#%EB%94%94%EB%B2%84%EA%B9%85-tailwind-%EC%A0%81%EC%9A%A9%ED%95%98%EB%A0%A4%EB%A9%B4-%EC%99%9C-%EA%B0%9C%EB%B0%9C-%EC%84%9C%EB%B2%84%EB%A5%BC-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%ED%95%B4%EC%95%BC-%ED%95%98%EB%82%98-%23%EB%8B%A4%EC%8B%9C%EB%B3%B4%EA%B8%B0)
-
-<!-- tocstop -->
-
 ## Context
 
 ## Day2 (2024.10.22)

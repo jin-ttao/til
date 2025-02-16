@@ -1,11 +1,5 @@
 # node.js
 
-<!-- toc -->
-
-- [내 로컬 vs code에서 특정 파일에서만 node version을 올릴 수 있어? 다른 파일에서는 node 버전을 유지하고.](#%EB%82%B4-%EB%A1%9C%EC%BB%AC-vs-code%EC%97%90%EC%84%9C-%ED%8A%B9%EC%A0%95-%ED%8C%8C%EC%9D%BC%EC%97%90%EC%84%9C%EB%A7%8C-node-version%EC%9D%84-%EC%98%AC%EB%A6%B4-%EC%88%98-%EC%9E%88%EC%96%B4-%EB%8B%A4%EB%A5%B8-%ED%8C%8C%EC%9D%BC%EC%97%90%EC%84%9C%EB%8A%94-node-%EB%B2%84%EC%A0%84%EC%9D%84-%EC%9C%A0%EC%A7%80%ED%95%98%EA%B3%A0)
-
-<!-- tocstop -->
-
 ### 내 로컬 vs code에서 특정 파일에서만 node version을 올릴 수 있어? 다른 파일에서는 node 버전을 유지하고.
 
 .nvmrc 파일 사용 (추천) / 프로젝트별 설정 방법 / VS Code 워크스페이스 설정

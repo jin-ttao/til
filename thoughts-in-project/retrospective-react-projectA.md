@@ -1,24 +1,5 @@
 # React 프로젝트A 회고
 
-<!-- toc -->
-
-- [context](#context)
-- [content - thought](#content---thought)
-  - [무슨 생각하면서 진행?](#%EB%AC%B4%EC%8A%A8-%EC%83%9D%EA%B0%81%ED%95%98%EB%A9%B4%EC%84%9C-%EC%A7%84%ED%96%89)
-    - [Eat your frog + 지금 내가 모르는 범위가 정확히 무엇인지 글로 정리.](#eat-your-frog--%EC%A7%80%EA%B8%88-%EB%82%B4%EA%B0%80-%EB%AA%A8%EB%A5%B4%EB%8A%94-%EB%B2%94%EC%9C%84%EA%B0%80-%EC%A0%95%ED%99%95%ED%9E%88-%EB%AC%B4%EC%97%87%EC%9D%B8%EC%A7%80-%EA%B8%80%EB%A1%9C-%EC%A0%95%EB%A6%AC)
-    - [내가 사용할 제품 만든다는 생각으로.](#%EB%82%B4%EA%B0%80-%EC%82%AC%EC%9A%A9%ED%95%A0-%EC%A0%9C%ED%92%88-%EB%A7%8C%EB%93%A0%EB%8B%A4%EB%8A%94-%EC%83%9D%EA%B0%81%EC%9C%BC%EB%A1%9C)
-    - [프론트엔드가 만드는 작업들은 제대로 만드는 것에 패턴이 있지 않을까?](#%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C%EA%B0%80-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%9E%91%EC%97%85%EB%93%A4%EC%9D%80-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EB%A7%8C%EB%93%9C%EB%8A%94-%EA%B2%83%EC%97%90-%ED%8C%A8%ED%84%B4%EC%9D%B4-%EC%9E%88%EC%A7%80-%EC%95%8A%EC%9D%84%EA%B9%8C)
-  - [설계하면서.](#%EC%84%A4%EA%B3%84%ED%95%98%EB%A9%B4%EC%84%9C)
-    - [완벽주의 경계, overthink 지양하는 환경](#%EC%99%84%EB%B2%BD%EC%A3%BC%EC%9D%98-%EA%B2%BD%EA%B3%84-overthink-%EC%A7%80%EC%96%91%ED%95%98%EB%8A%94-%ED%99%98%EA%B2%BD)
-    - [고민이 생길 때 마다 제한시간을 30분으로 정해두고 빠르게 결정하려고 했다.](#%EA%B3%A0%EB%AF%BC%EC%9D%B4-%EC%83%9D%EA%B8%B8-%EB%95%8C-%EB%A7%88%EB%8B%A4-%EC%A0%9C%ED%95%9C%EC%8B%9C%EA%B0%84%EC%9D%84-30%EB%B6%84%EC%9C%BC%EB%A1%9C-%EC%A0%95%ED%95%B4%EB%91%90%EA%B3%A0-%EB%B9%A0%EB%A5%B4%EA%B2%8C-%EA%B2%B0%EC%A0%95%ED%95%98%EB%A0%A4%EA%B3%A0-%ED%96%88%EB%8B%A4)
-    - [나의 '상수'를 늘려나가자.](#%EB%82%98%EC%9D%98-%EC%83%81%EC%88%98%EB%A5%BC-%EB%8A%98%EB%A0%A4%EB%82%98%EA%B0%80%EC%9E%90)
-    - [문제를 잘 정의하는게 얼마나 중요한지.](#%EB%AC%B8%EC%A0%9C%EB%A5%BC-%EC%9E%98-%EC%A0%95%EC%9D%98%ED%95%98%EB%8A%94%EA%B2%8C-%EC%96%BC%EB%A7%88%EB%82%98-%EC%A4%91%EC%9A%94%ED%95%9C%EC%A7%80)
-- [content - engineering](#content---engineering)
-  - [시간 오래 쓴 작업](#%EC%8B%9C%EA%B0%84-%EC%98%A4%EB%9E%98-%EC%93%B4-%EC%9E%91%EC%97%85)
-    - [1일차: 기술 스택 리서치](#1%EC%9D%BC%EC%B0%A8-%EA%B8%B0%EC%88%A0-%EC%8A%A4%ED%83%9D-%EB%A6%AC%EC%84%9C%EC%B9%98)
-
-<!-- tocstop -->
-
 ## context
 
 - 2024년 10월 중순, 5일 간의 프로젝트 중 메모한 것을 정리해서 옮기고 회고를 함께 작성한다.

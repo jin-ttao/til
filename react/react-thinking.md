@@ -1,27 +1,5 @@
 # React Thinking
 
-<!-- toc -->
-
-- [Context](#context)
-- [Opinion](#opinion)
-  - [왜 ‘최소한’의 state를 권장할까? 🤔](#%EC%99%9C-%EC%B5%9C%EC%86%8C%ED%95%9C%EC%9D%98-state%EB%A5%BC-%EA%B6%8C%EC%9E%A5%ED%95%A0%EA%B9%8C-%F0%9F%A4%94)
-  - [필요한 state 정의 먼저 하고, 활용할 컴포넌트를 지정한다는 접근 👍](#%ED%95%84%EC%9A%94%ED%95%9C-state-%EC%A0%95%EC%9D%98-%EB%A8%BC%EC%A0%80-%ED%95%98%EA%B3%A0-%ED%99%9C%EC%9A%A9%ED%95%A0-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EC%A7%80%EC%A0%95%ED%95%9C%EB%8B%A4%EB%8A%94-%EC%A0%91%EA%B7%BC-%F0%9F%91%8D)
-- [Learned](#learned)
-  - [Intro](#intro)
-  - [Step 1: UI를 컴포넌트 단위로 쪼개기 (Don't code yet.🙅)](#step-1-ui%EB%A5%BC-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%8B%A8%EC%9C%84%EB%A1%9C-%EC%AA%BC%EA%B0%9C%EA%B8%B0-dont-code-yet%F0%9F%99%85)
-    - [컴포넌트 쪼개기 결과 sample](#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%AA%BC%EA%B0%9C%EA%B8%B0-%EA%B2%B0%EA%B3%BC-sample)
-    - [컴포넌트 쪼개기 방법들](#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%AA%BC%EA%B0%9C%EA%B8%B0-%EB%B0%A9%EB%B2%95%EB%93%A4)
-    - [컴포넌트 쪼개기 Tips](#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%AA%BC%EA%B0%9C%EA%B8%B0-tips)
-  - [Step 2: React로 정적인 버전 구현하기 (Code Start!💥)](#step-2-react%EB%A1%9C-%EC%A0%95%EC%A0%81%EC%9D%B8-%EB%B2%84%EC%A0%84-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0-code-start%F0%9F%92%A5)
-  - [Step 3: ‘최소한’의 데이터만 이용해서 ‘완벽’하게 UI State 표현하기](#step-3-%EC%B5%9C%EC%86%8C%ED%95%9C%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%99%84%EB%B2%BD%ED%95%98%EA%B2%8C-ui-state-%ED%91%9C%ED%98%84%ED%95%98%EA%B8%B0)
-    - [state 정의할 때 중요한 점](#state-%EC%A0%95%EC%9D%98%ED%95%A0-%EB%95%8C-%EC%A4%91%EC%9A%94%ED%95%9C-%EC%A0%90)
-    - [state 가 될 수 있는 조건](#state-%EA%B0%80-%EB%90%A0-%EC%88%98-%EC%9E%88%EB%8A%94-%EC%A1%B0%EA%B1%B4)
-    - [state 결정 타이밍](#state-%EA%B2%B0%EC%A0%95-%ED%83%80%EC%9D%B4%EB%B0%8D)
-  - [Step 4: State가 어디에 있어야 할 지 정하기](#step-4-state%EA%B0%80-%EC%96%B4%EB%94%94%EC%97%90-%EC%9E%88%EC%96%B4%EC%95%BC-%ED%95%A0-%EC%A7%80-%EC%A0%95%ED%95%98%EA%B8%B0)
-  - [Step 5: 역 데이터 흐름 추가하기](#step-5-%EC%97%AD-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%9D%90%EB%A6%84-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)
-
-<!-- tocstop -->
-
 # Context
 
 - 기술적 프레임워크를 써먹기 전에, 사고적 프레임워크를 세팅.

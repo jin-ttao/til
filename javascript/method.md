@@ -1,26 +1,5 @@
 # Method
 
-<!-- toc -->
-
-- [context](#context)
-- [content](#content)
-  - [Array](#array)
-    - [배열에 이게 들어가 있을까? (다양한 맥락, 다양한 return 값 활용 가능)](#%EB%B0%B0%EC%97%B4%EC%97%90-%EC%9D%B4%EA%B2%8C-%EB%93%A4%EC%96%B4%EA%B0%80-%EC%9E%88%EC%9D%84%EA%B9%8C-%EB%8B%A4%EC%96%91%ED%95%9C-%EB%A7%A5%EB%9D%BD-%EB%8B%A4%EC%96%91%ED%95%9C-return-%EA%B0%92-%ED%99%9C%EC%9A%A9-%EA%B0%80%EB%8A%A5)
-    - [배열 요소를 바꾸고 싶다 (메소드가 실제 '변경'으로 동작하는 것 이해하기)](#%EB%B0%B0%EC%97%B4-%EC%9A%94%EC%86%8C%EB%A5%BC-%EB%B0%94%EA%BE%B8%EA%B3%A0-%EC%8B%B6%EB%8B%A4-%EB%A9%94%EC%86%8C%EB%93%9C%EA%B0%80-%EC%8B%A4%EC%A0%9C-%EB%B3%80%EA%B2%BD%EC%9C%BC%EB%A1%9C-%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94-%EA%B2%83-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
-    - [sort()](#sort)
-    - [`reduce()`](#reduce)
-      - [reduce() 메소드 중간에 멈추기: `break;` 는 당연히 안됨.](#reduce-%EB%A9%94%EC%86%8C%EB%93%9C-%EC%A4%91%EA%B0%84%EC%97%90-%EB%A9%88%EC%B6%94%EA%B8%B0-break-%EB%8A%94-%EB%8B%B9%EC%97%B0%ED%9E%88-%EC%95%88%EB%90%A8)
-    - [`slice()`: 복사](#slice-%EB%B3%B5%EC%82%AC)
-    - [`splice()`: 삭제, 교체, 추가](#splice-%EC%82%AD%EC%A0%9C-%EA%B5%90%EC%B2%B4-%EC%B6%94%EA%B0%80)
-    - [`reverse()` 배열의 요소 반전.](#reverse-%EB%B0%B0%EC%97%B4%EC%9D%98-%EC%9A%94%EC%86%8C-%EB%B0%98%EC%A0%84)
-    - [참조하는 배열을 특정 조건으로 검사해서 Boolean값을 반환하고 싶을 때 사용하는 `Array.prototype.some()` vs `Array.prototype.every()`](#%EC%B0%B8%EC%A1%B0%ED%95%98%EB%8A%94-%EB%B0%B0%EC%97%B4%EC%9D%84-%ED%8A%B9%EC%A0%95-%EC%A1%B0%EA%B1%B4%EC%9C%BC%EB%A1%9C-%EA%B2%80%EC%82%AC%ED%95%B4%EC%84%9C-boolean%EA%B0%92%EC%9D%84-%EB%B0%98%ED%99%98%ED%95%98%EA%B3%A0-%EC%8B%B6%EC%9D%84-%EB%95%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94-arrayprototypesome-vs-arrayprototypeevery)
-    - [배열간 합치고 싶다면, `spread operator(...)` or `concat()`](#%EB%B0%B0%EC%97%B4%EA%B0%84-%ED%95%A9%EC%B9%98%EA%B3%A0-%EC%8B%B6%EB%8B%A4%EB%A9%B4-spread-operator-or-concat)
-  - [Object](#object)
-  - [Map](#map)
-  - [Set](#set)
-
-<!-- tocstop -->
-
 ## context
 
 - 한 번 사용한 메소드는 언제 왜 사용하는지, param, return, 주요 키워드를 반드시 기억한다.

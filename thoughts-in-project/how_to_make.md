@@ -1,15 +1,5 @@
 # HOW TO MAKE?
 
-<!-- toc -->
-
-- [context](#context)
-- [content](#content)
-  - [24.10.12 이번 과제 프로젝트 만들면서 아쉬웠던 점](#241012-%EC%9D%B4%EB%B2%88-%EA%B3%BC%EC%A0%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%8C%EB%93%A4%EB%A9%B4%EC%84%9C-%EC%95%84%EC%89%AC%EC%9B%A0%EB%8D%98-%EC%A0%90)
-    - [만약 다시 처음 부터 만든다면 무엇을 할거냐, 그 다음은? 그 다음은?: 요구사항을 소화하고, 내가 기능을 재정의 한다. 그리고 커밋 계획을 스케치할 거고, 일정을 맞추기 위해 주변에 도움을 적극적으로 요청한다.](#%EB%A7%8C%EC%95%BD-%EB%8B%A4%EC%8B%9C-%EC%B2%98%EC%9D%8C-%EB%B6%80%ED%84%B0-%EB%A7%8C%EB%93%A0%EB%8B%A4%EB%A9%B4-%EB%AC%B4%EC%97%87%EC%9D%84-%ED%95%A0%EA%B1%B0%EB%83%90-%EA%B7%B8-%EB%8B%A4%EC%9D%8C%EC%9D%80-%EA%B7%B8-%EB%8B%A4%EC%9D%8C%EC%9D%80-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%9D%84-%EC%86%8C%ED%99%94%ED%95%98%EA%B3%A0-%EB%82%B4%EA%B0%80-%EA%B8%B0%EB%8A%A5%EC%9D%84-%EC%9E%AC%EC%A0%95%EC%9D%98-%ED%95%9C%EB%8B%A4-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%BB%A4%EB%B0%8B-%EA%B3%84%ED%9A%8D%EC%9D%84-%EC%8A%A4%EC%BC%80%EC%B9%98%ED%95%A0-%EA%B1%B0%EA%B3%A0-%EC%9D%BC%EC%A0%95%EC%9D%84-%EB%A7%9E%EC%B6%94%EA%B8%B0-%EC%9C%84%ED%95%B4-%EC%A3%BC%EB%B3%80%EC%97%90-%EB%8F%84%EC%9B%80%EC%9D%84-%EC%A0%81%EA%B7%B9%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%9A%94%EC%B2%AD%ED%95%9C%EB%8B%A4)
-    - [프로젝트 속도를 더 빨리 냈으려면 어떻게 했어야 했을까? 아래 옵션들이 기여를 할까?](#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%86%8D%EB%8F%84%EB%A5%BC-%EB%8D%94-%EB%B9%A8%EB%A6%AC-%EB%83%88%EC%9C%BC%EB%A0%A4%EB%A9%B4-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%96%88%EC%96%B4%EC%95%BC-%ED%96%88%EC%9D%84%EA%B9%8C-%EC%95%84%EB%9E%98-%EC%98%B5%EC%85%98%EB%93%A4%EC%9D%B4-%EA%B8%B0%EC%97%AC%EB%A5%BC-%ED%95%A0%EA%B9%8C)
-
-<!-- tocstop -->
-
 ## context
 
 - 바닐라 자바스크립트, 리액트로 구현 중 생긴 고민을 기록한다.
