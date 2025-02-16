@@ -59,3 +59,11 @@
   * [React 프로젝트A 회고](thoughts-in-project/retrospective-react-projectA.md)
   * [React 프로젝트 weCalendar 회고](thoughts-in-project/retrospective-weCalendar.md)
   * [welcome-toast 회고](thoughts-in-project/retrospective-welcome-toast.md)
+
+## JavaScript
+
+* [Page 1](javascript-1/page-1.md)
+
+## React
+
+* [Page 2](react-1/page-2.md)
