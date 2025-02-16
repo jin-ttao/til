@@ -1,69 +1,80 @@
 # Table of contents
 
 * [Jintae's Wiki](README.md)
-* [개발하면서](programming.md)
-* [용어 정의 모음](name-definition.md)
-* [Problem Solving](what-is-problem-solving/README.md)
-  * [Page](what-is-problem-solving/page.md)
-* [Algorithm](algorithm/README.md)
-  * [알고리즘 레슨 정리](algorithm/algorithm-checkout.md)
-  * [알고리즘 복기](algorithm/algorithm-review.md)
-* [Backend](backend/README.md)
-  * [mongoose](backend/mongoose.md)
-* [computer](computer/README.md)
-  * [OS(Operating System)](computer/operating-system.md)
-* [git](git/README.md)
-  * [Atomic Commit](git/atomic-commit.md)
-  * [git command](git/git-command.md)
-* [javascript](javascript/README.md)
-  * [astro](javascript/astro-framework.md)
-  * [asynchronous](javascript/asynchronous.md)
-  * [JavaScript 코드 실행 로직](javascript/code-execution.md)
-  * [매개변수](javascript/data.md)
-  * [Method](javascript/method.md)
-  * [Scope](javascript/scope.md)
-  * [shallow-deep](javascript/shallow-deep.md)
-  * [Web & DOM](javascript/webdom.md)
-* [personal-retrospective](personal-retrospective/README.md)
-  * [2024-10](personal-retrospective/2024-10.md)
-  * [2024.11](personal-retrospective/2024-11.md)
-* [react](react/README.md)
-  * [Component](react/react-component.md)
-  * [React 조건부 렌더링](react/react-conditional-rendering.md)
-  * [React Inside](react/react-inside_work.md)
-  * [react-jsx\_only\_expression](react/react-jsx_only_expression.md)
-  * [React 리스트 렌더링](react/react-list_rendering.md)
-  * [React 공식 문서 <학습하기> 읽고 opinion 기록](react/react-opinion-on-official_docs.md)
-  * [react-prop](react/react-prop.md)
-  * [Redux](react/react-redux.md)
-  * [react-redux\_toolkit](react/react-redux_toolkit.md)
-  * [React Router](react/react-router.md)
-  * [react-side\_effect-useEffect](react/react-side_effect-useEffect.md)
-  * [react-state-useState](react/react-state-useState.md)
-  * [React technique & tips](react/react-technique.md)
-  * [react-thinking](react/react-thinking.md)
-* [runtime-network](runtime-network/README.md)
-  * [browser](runtime-network/browser.md)
-  * [http](runtime-network/http.md)
-  * [node.js](runtime-network/node.js.md)
-  * [JavaScript Runtime](runtime-network/runtime.md)
-* [style](style/README.md)
-  * [css](style/css.md)
-  * [style-component](style/style-component.md)
-  * [Tailwind CSS](style/tailwind-css.md)
-* [thoughts-in-project](thoughts-in-project/README.md)
-  * [팀 프로젝트 발표에서 나온 질문 랩업 (241227 유튜브 Live)](thoughts-in-project/followup-pt-team-project.md)
-  * [HOW TO MAKE?](thoughts-in-project/how_to_make.md)
-  * [프로젝트 bloblow 회고 Daily](thoughts-in-project/retrospective-bloblow-daily.md)
-  * [프로젝트 bloblow 회고 Weekly](thoughts-in-project/retrospective-bloblow-weekly.md)
-  * [React 프로젝트A 회고](thoughts-in-project/retrospective-react-projectA.md)
-  * [React 프로젝트 weCalendar 회고](thoughts-in-project/retrospective-weCalendar.md)
-  * [welcome-toast 회고](thoughts-in-project/retrospective-welcome-toast.md)
+
+## In Practice
+
+* [개발하면서 든 생각들](in-practice/programming.md)
+* [구현 중 고민들](in-practice/how_to_make.md)
+* [프로젝트 회고](in-practice/undefined/README.md)
+  * [개인 프로젝트 welcome-toast 회고 2024-12](in-practice/undefined/retrospective-welcome-toast.md)
+  * [팀 프로젝트 Bloblow 회고 Weekly 2024-11](in-practice/undefined/retrospective-bloblow-weekly.md)
+  * [팀 프로젝트 Bloblow 회고 Daily 2024-11](in-practice/undefined/retrospective-bloblow-daily.md)
+  * [개인 프로젝트 weCalendar 회고 2024-10](in-practice/undefined/retrospective-wecalendar.md)
+  * [개인 프로젝트A 회고 2024-10](in-practice/undefined/retrospective-react-projecta.md)
+* [프로젝트 피드백](in-practice/followup-pt-team-project.md)
+
+## Basic
+
+* [문제 해결](basic/what-is-problem-solving.md)
+* [용어들 정의](basic/name-definition.md)
+* [컴퓨터 과학](basic/computer/README.md)
+  * [OS(Operating System)](basic/computer/operating-system.md)
+* [알고리즘 노트](basic/algorithm/README.md)
+  * [알고리즘 레슨 정리](basic/algorithm/algorithm-checkout.md)
+  * [알고리즘 복기](basic/algorithm/algorithm-review.md)
 
 ## JavaScript
 
-* [Page 1](javascript-1/page-1.md)
+* [비동기](javascript/asynchronous.md)
+* [스코프](javascript/scope.md)
+* [얕고 깊음 논쟁](javascript/shallow-deep.md)
+* [메소드](javascript/method.md)
+* [다시 볼 코드](javascript/code-execution.md)
 
 ## React
 
-* [Page 2](react-1/page-2.md)
+* [React를 다룰 때](react/react/README.md)
+  * [컴포넌트에 대한 생각](react/react/react-component.md)
+  * [React 사용해보면서](react/react/react-technique.md)
+  * [React의 Side effect](react/react/react-side-effect.md)
+  * [React Router 사용해보면서](react/react/react-router.md)
+* [React 공식 문서](react/react-1/README.md)
+  * [React 공식 문서 <학습하기> 읽고 opinion 기록](react/react-1/react-opinion-on-official_docs.md)
+  * [React 조건부 렌더링](react/react-1/react-conditional-rendering.md)
+  * [React 리스트 렌더링](react/react-1/react-list_rendering.md)
+  * [react-thinking](react/react-1/react-thinking.md)
+  * [useEffect](react/react-1/react-side_effect-useeffect.md)
+* [React 상태 관리](react/react-2/README.md)
+  * [Redux](react/react-2/react-redux.md)
+  * [Redux Toolkit 사용하면서](react/react-2/react-redux_toolkit.md)
+  * [useState 사용하면서](react/react-2/react-state-usestate.md)
+* [React 원리 들여다보기](react/react-3/README.md)
+  * [React 내부 동작](react/react-3/react-inside_work.md)
+  * [JSX 내부에 JS 표현식만 가능한 이유](react/react-3/react-jsx_only_expression.md)
+
+## Browser / Runtime
+
+* [브라우저](browser-runtime/browser.md)
+* [Node.js](browser-runtime/node.js.md)
+* [그외 런타임](browser-runtime/runtime.md)
+
+## HTTP / Network
+
+* [HTTP](http-network/http.md)
+
+## HTML / CSS
+
+* [CSS](html-css/css.md)
+* [Tailwind CSS](html-css/tailwind-css.md)
+* [style-component](html-css/style-component.md)
+
+## Git / GitHub
+
+* [Atomic Commit을 처음 만나고](git-github/atomic-commit.md)
+* [git command](git-github/git-command.md)
+
+## WIP
+
+* [Astro](wip/astro-framework.md)
+* [mongoose](wip/mongoose.md)

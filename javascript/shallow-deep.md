@@ -1,10 +1,12 @@
-# Shallow & Deep
+# 얕고 깊음 논쟁
 
-# 맥락
+## Shallow & Deep war
 
-- 팀플에서 객체간 비교하는데 알고보니 의도가 있었음. https://github.com/Team-Bloblow/Bloblow-Client/pull/68#discussion_r1899049987
-- https://betterprogramming.pub/why-you-shouldnt-use-json-stringify-to-compare-objects-in-javascript-c9a16b7331e
-- https://velog.io/@neighborkim/%EC%96%95%EC%9D%80-%EB%B9%84%EA%B5%90Shallow-Compare-%EC%99%80-%EA%B9%8A%EC%9D%80-%EB%B9%84%EA%B5%90Deep-Compare
+## 맥락
+
+* 팀플에서 객체간 비교하는데 알고보니 의도가 있었음. https://github.com/Team-Bloblow/Bloblow-Client/pull/68#discussion\_r1899049987
+* https://betterprogramming.pub/why-you-shouldnt-use-json-stringify-to-compare-objects-in-javascript-c9a16b7331e
+* https://velog.io/@neighborkim/%EC%96%95%EC%9D%80-%EB%B9%84%EA%B5%90Shallow-Compare-%EC%99%80-%EA%B9%8A%EC%9D%80-%EB%B9%84%EA%B5%90Deep-Compare
 
 ```js
 const items = [];

@@ -1,10 +1,27 @@
-# JavaScript 코드 실행 로직
+# 다시 볼 코드
 
 ## 맥락
 
-* 어려웠던 코드 아카이빙
+* 어려웠거나 리마인드를 위한 코드 아카이빙
 
 ## 내용
+
+### 매개변수 예제 feat. 원시값 & 참조값
+
+```js
+function foo(param) {
+  console.log(param); // { a: 1, b: 2 }
+  param.a = 10; // 외부 스코프 obj 프로퍼티에 영향 있음
+  param = null; // 내부에는 영향 있으나, 외부 obj 프로퍼티에 영향 없음
+  console.log(param); // null
+  param.b = 100; // null로 선언된 데이터에 프로퍼티 세팅 불가
+}
+
+const obj = {
+  a: 1,
+  b: 2,
+};
+```
 
 ### 공통 key로 2개의 객체 배열을 병합하기 - 가급적 이중 for문 피할 수 있나 (24.12.31)
 
