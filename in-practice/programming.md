@@ -2,6 +2,39 @@
 icon: '0'
 ---
 
+# 코드 가독성 ⬆︎
+
+엣지 케이스를 항상 별도로 처리하는 것이 최선은 아니다. (25.02.22 알고리즘 풀면서)
+- 이번 알고리즘 문제에서는 분기 처리된 로직(`Math.max()`와 유사)이 결국 동일한 결과를 도출하기 때문에, 통합 처리하는 것이 가독성 측면에서 더 유리했었다.
+- 예외 케이스는 그 자체로 처리하는 것이 목적일 때만 별도로 다루도록 하자.
+
+<details>
+<summary>코드 비교</summary>
+
+```js
+// 현재
+if (gain.length === 1) {
+  return Math.max(0, gain[0]);
+}
+
+// 통합해보면? ✅
+const largestAltitude = function(gain) {
+  let altitude = 0;
+  let max = 0;
+  
+  for (const change of gain) {
+      altitude += change;
+      max = Math.max(max, altitude);
+  }
+  
+  return max;
+}
+```
+</details>
+
+<br/>
+<br/>
+
 # 개발하면서 든 생각들
 
 * 이제 저와 함께 살펴봅시다. 명확한 가치를 자주 배포하는 데 초점을 맞춰 소프트웨어 개발을 더 간결하게 만드는 방법을요. (책 - THE NATURE OF SOFTWARE DEVELOPMENT)
