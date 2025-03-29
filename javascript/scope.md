@@ -1,4 +1,4 @@
-# Scope
+# 스코프
 
 ### `var`와 `let`, `const` 각각으로 선언된 변수의 스코프: 선언 키워드, 위치에 따라 어디서 쓸 수 있을까?
 
@@ -39,10 +39,9 @@ console.log(i); // 5 출력.. 그런데 이 i는 어느 i일까?:
 // 왜? #4가 정확한 그 예시임. ⚡ let 선언 변수의 스코프는 '가장 가까운 중괄호 내부'이기 때문. (소괄호가 스코프라서가 아님 주의)
 ```
 
-실험 스크린샷
-![변수_var_let_scope](/assets/변수_var_let_scope.png)
+실험 스크린샷 ![변수\_var\_let\_scope](../assets/변수_var_let_scope.png)
 
 참고
 
-- https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/var
-- https://www.bangseongbeom.com/javascript-var-let.html
+* https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/var
+* https://www.bangseongbeom.com/javascript-var-let.html

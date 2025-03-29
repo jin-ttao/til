@@ -1,8 +1,4 @@
----
-icon: '2'
----
-
-# Problem Solving
+# 문제 해결
 
 ## 배경
 

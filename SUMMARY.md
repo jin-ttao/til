@@ -1,18 +1,17 @@
 # Table of contents
 
 * [Jintae's Wiki](README.md)
-
-## In Practice
-
-* [개발하면서 든 생각들](in-practice/programming.md)
-* [구현 중 고민들](in-practice/how_to_make.md)
-* [프로젝트 회고](in-practice/undefined/README.md)
-  * [개인 프로젝트 welcome-toast 회고 2024-12](in-practice/undefined/retrospective-welcome-toast.md)
-  * [팀 프로젝트 Bloblow 회고 Weekly 2024-11](in-practice/undefined/retrospective-bloblow-weekly.md)
-  * [팀 프로젝트 Bloblow 회고 Daily 2024-11](in-practice/undefined/retrospective-bloblow-daily.md)
-  * [개인 프로젝트 weCalendar 회고 2024-10](in-practice/undefined/retrospective-wecalendar.md)
-  * [개인 프로젝트A 회고 2024-10](in-practice/undefined/retrospective-react-projecta.md)
-* [프로젝트 피드백](in-practice/followup-pt-team-project.md)
+* [TypeScript](typescript/README.md)
+  * [웰컴토스트 어드민 TypeScript 이사하기](typescript/typescript.md)
+* [개발하면서 든 생각들](programming.md)
+* [구현 중 고민들](how_to_make.md)
+* [프로젝트 회고](undefined/README.md)
+  * [개인 프로젝트 welcome-toast 회고 2024-12](undefined/retrospective-welcome-toast.md)
+  * [팀 프로젝트 Bloblow 회고 Weekly 2024-11](undefined/retrospective-bloblow-weekly.md)
+  * [팀 프로젝트 Bloblow 회고 Daily 2024-11](undefined/retrospective-bloblow-daily.md)
+  * [개인 프로젝트 weCalendar 회고 2024-10](undefined/retrospective-wecalendar.md)
+  * [개인 프로젝트A 회고 2024-10](undefined/retrospective-react-projecta.md)
+* [프로젝트 피드백](followup-pt-team-project.md)
 
 ## Basic
 

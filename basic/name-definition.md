@@ -1,7 +1,3 @@
----
-icon: '1'
----
-
 # 용어들 정의
 
 ## Name & Definition
