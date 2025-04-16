@@ -1,4 +1,16 @@
+---
+description: pure function, side effect, useEffect
+---
+
 # Side effect
+
+#### useEffect 셋업 함수가 실행되는 정확한 시점
+
+
+
+
+
+
 
 ### useEffect와 순수성
 

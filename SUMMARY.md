@@ -4,12 +4,14 @@
 
 ## React
 
-* [React 사용해보면서](react/react/react-technique.md)
-* [컴포넌트](react/react/react-component.md)
-* [상태 관리](react/react-2/react-state-usestate.md)
+* [Reconciliation](react/react/react-technique.md)
+* [Component](react/react/react-component.md)
+* [State](react/react-2/react-state-usestate.md)
 * [Redux](react/react-2/react-redux.md)
 * [Side effect](react/react/react-side-effect.md)
 * [Routing](react/react/react-router.md)
+* [Optimization](react/optimization.md)
+* [Error Handling](react/error-handling.md)
 * [From React team](react/react-1/README.md)
   * [React Thinking](react/react-1/react-thinking.md)
   * [공식 문서 \<Learn> part](react/react-1/react-opinion-on-official_docs.md)

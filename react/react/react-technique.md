@@ -1,10 +1,20 @@
-# React 사용해보면서
+# Reconciliation
 
-## opinion
 
-## research
 
-`<div key={keywordId} >`에서 key 있고 없고의 차이 리액트는 이걸로 무엇을 처리하나, 결과가 달라지는지? key도 prop이므로 달라지면 완전히 새로 그린다.
+reconciliation&#x20;
+
+react-dom
+
+
+
+
+
+#### 리스트 렌더링에서 `key` 역할
+
+* `<div key={...id} >`에서 key 있고 없고의 차이는?&#x20;
+* 리액트는 이걸로 무엇을 처리하나, 없을 때 결과가 어떻게 달라지는지?
+* key도 prop이므로 달라지면 완전히 새로 그리는데, 업데이트인지 마운트 자체를 새롭게 하는 것인지 확인 필요
 
 ```js
 {
@@ -68,3 +78,9 @@ useEffect(() => {
       );
     }
     ```
+
+
+
+**Reference**
+
+{% embed url="https://ko.legacy.reactjs.org/docs/reconciliation.html" %}

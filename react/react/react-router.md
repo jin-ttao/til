@@ -1,5 +1,24 @@
 # Routing
 
+
+
+Navigate
+
+* React 앱에서 navigation 타이밍은 중요함.
+  * navigation 타이밍이 잘못되면, race condition이 일어날 수 있음. 준비되지 않은 상태에서 라우팅이 발생하면 UI 오류가 발생하거나 의도대로 동작하지 않을 수 있을 것. (아래 코드 참고)
+
+```javascript
+function 컴포넌트() {
+    ...
+    navigate("/"); // 렌더링 중 갑자기 라우팅 되버림
+    return ...
+}
+```
+
+{% embed url="https://www.dhiwise.com/post/why-you-should-call-navigate-in-areact-useeffect" %}
+
+
+
 ## React Router
 
 ### opinion
