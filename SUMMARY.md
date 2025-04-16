@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Jintae's Wiki](README.md)
+* [frontend playbook](README.md)
 * [TypeScript](typescript/README.md)
   * [웰컴토스트 어드민 TypeScript 이사하기](typescript/typescript.md)
 * [개발하면서 든 생각들](programming.md)
