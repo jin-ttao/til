@@ -40,7 +40,7 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 ### content - opinion
 
-![react-redux-realtionship](../assets/react-redux-files-overview.jpg)
+![react-redux-realtionship](../../assets/react-redux-files-overview.jpg)
 
 #### createSlice에서 왜 'slice'라고 이름을 붙였을까?
 

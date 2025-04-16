@@ -1,4 +1,4 @@
-# React의 Side effect
+# Side effect
 
 ### useEffect와 순수성
 

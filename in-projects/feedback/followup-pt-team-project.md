@@ -1,8 +1,10 @@
-# 프로젝트 피드백
+---
+description: 바닐라코딩 팀 프로젝트 발표 Wrap-up
+---
 
-## 바닐라코딩 팀 프로젝트 발표 Wrap-up
+# team project @bloblow
 
-팀 프로젝트 발표에서 나온 질문 랩업 (241227 유튜브 Live)
+## 팀 프로젝트 발표에서 나온 질문 랩업 (241227 유튜브 Live)
 
 ## context
 

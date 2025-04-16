@@ -1,4 +1,8 @@
-# 개인 프로젝트 welcome-toast 회고 2024-12
+---
+description: 개인 프로젝트
+---
+
+# welcome-toast 회고 (2024-12)
 
 ## 12.09
 
