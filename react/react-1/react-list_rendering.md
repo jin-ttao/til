@@ -1,4 +1,8 @@
-# React 리스트 렌더링
+---
+description: 공식 문서 <리스트 렌더링> part
+---
+
+# 리스트 렌더링
 
 ## context
 

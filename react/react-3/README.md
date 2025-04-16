@@ -1,6 +1,6 @@
----
-icon: '3'
----
+# Inside React
 
-# React 원리 들여다보기
-
+```
+from react source code
+https://github.com/facebook/react
+```

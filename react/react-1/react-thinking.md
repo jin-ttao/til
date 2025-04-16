@@ -1,4 +1,8 @@
-# react-thinking
+---
+description: 공식 문서 <리액트적 사고하기> part
+---
+
+# React Thinking
 
 ## React Thinking
 
