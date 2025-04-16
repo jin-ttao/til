@@ -1,6 +1,99 @@
 # Component
 
+#### 생각) 클래스형 컴포넌트는 선언적이지 않다?
 
+* 클래스형 컴포넌트는 명령형 프로그래밍에 가깝다는 생각이 든다. 덜 선언적인 것 같다.
+* 리액트는 바닐라 자바스크립트로 만든 앱의 코드 보다 what에 집중한 선언형에 가깝다 생각했다. 함수형 컴포넌트는 그걸 잘 보여주는 것 같고.
+* 실제로 함수형 컴포넌트로 컨셉을 틀면서 리액트 팀의 공식 입장은 어땠을까?
+
+> React is responsible for rendering components and Hooks when necessary to optimize the user experience. It is declarative: you tell React what to render in your component’s logic, and React will figure out how best to display it to your user.\
+> [React calls Components and Hooks](https://react.dev/reference/rules/react-calls-components-and-hooks?utm_source=chatgpt.com)
+
+{% embed url="https://overreacted.io/how-does-react-tell-a-class-from-a-function/" %}
+
+{% embed url="https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889" %}
+Dan Abramov
+{% endembed %}
+
+{% embed url="https://dev.to/craigmichaelmartin/hooks-for-those-who-know-react-3n89" %}
+Dan Abramov 트윗 아카이빙
+{% endembed %}
+
+{% embed url="https://dev.to/syakirurahman/react-functional-component-with-hooks-everything-you-need-to-know-5bjj" %}
+정리 굿
+{% endembed %}
+
+
+
+#### 함수형 컴포넌트는 내부적으로 상태, 라이프사이클을 '직접' 갖고 있지 않음.
+
+<table><thead><tr><th width="145.05902099609375">구분</th><th>클래스형 컴포넌트</th><th>함수형 컴포넌트</th></tr></thead><tbody><tr><td>컨셉</td><td>내가 상태, 라이프사이클 메소드 <br>전부 다 직접 가진다</td><td>그냥 JS 함수일 뿐. 소유 X</td></tr><tr><td>목적/정체성</td><td>상태, 생명 주기를 자기 안에 <br>직접 구현한 '객체'<br>- React는 클래스형 컴포넌트를 인스턴스(new) 로 만들고, 상태와 메서드를 그 인스턴스 안에 저장</td><td>JSX 반환<br>- 함수(컴포넌트) 자체에는 상태도 없고, 생명주기 메소드도 없음</td></tr><tr><td>state, effect 처리</td><td>- <code>this.state</code> 로  상태를 직접 가짐.<br>- <code>componentDidMount()</code>로 React가 직접 호출하는 메서드</td><td>React가 따로 내부에서 처리<br>- React가 훅 보면서 순서에 따라서 이어붙여주는 식 (linked list로 훅 관리하는 것과 연결되는 개념일지 더블 체크)</td></tr></tbody></table>
+
+
+
+#### 함수형 컴포넌트는 훅(hook) 때문에 쓸 수 있는 것.&#x20;
+
+* 훅(hook)은 함수형 컴포넌트를 설명할 때 빼놓을 수 없는 React의 중요한 인터페이스였음...
+* `useState`, `useEffect`도 결국 캡슐화/추상화 된 React의 함수
+
+```javascript
+const [count, setCount] = useState(0);
+
+// count 상태는 여기 컴포넌트에 없음.
+// React한테 매번 요청해서 받아내는 것.
+```
+
+
+
+```javascript
+// 클래스형
+class MyComponent extends React.Component {
+  state = { count: 0 };
+
+  componentDidMount() {
+    console.log("마운트 완료!");
+  }
+
+  render() {
+    return (
+      <button
+        onClick={
+          () => this.setState({ count: this.state.count + 1 })
+        }
+      >
+        {this.state.count}
+      </button>
+    );
+  }
+}
+```
+
+```javascript
+// 함수형
+function MyComponent() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log("마운트 완료!");
+  }, []);
+
+  return (
+    <button
+      onClick={
+        () => setCount(count + 1)
+      }
+    >
+      {count}
+    </button>
+  );
+}
+```
+
+
+
+
+
+{% embed url="https://ko.javascript.info/class-inheritance" %}
 
 
 

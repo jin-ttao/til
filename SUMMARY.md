@@ -11,6 +11,8 @@
 * [Side effect](react/react/react-side-effect.md)
 * [Routing](react/react/react-router.md)
 * [Optimization](react/optimization.md)
+* [Design Pattern](react/design-pattern.md)
+* [Server Side Rendering](react/server-side-rendering.md)
 * [Error Handling](react/error-handling.md)
 * [From React team](react/react-1/README.md)
   * [React Thinking](react/react-1/react-thinking.md)
