@@ -4,7 +4,6 @@
 
 ## React
 
-* [Reconciliation](react/react/react-technique.md)
 * [Component](react/react/react-component.md)
 * [State](react/react-2/react-state-usestate.md)
 * [Redux](react/react-2/react-redux.md)
@@ -13,6 +12,7 @@
 * [Optimization](react/optimization.md)
 * [Design Pattern](react/design-pattern.md)
 * [Server Side Rendering](react/server-side-rendering.md)
+* [Reconciliation](react/react/react-technique.md)
 * [Error Handling](react/error-handling.md)
 * [From React team](react/react-1/README.md)
   * [React Thinking](react/react-1/react-thinking.md)
